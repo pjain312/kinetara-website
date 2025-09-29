@@ -13,9 +13,9 @@ export default function HomePage() {
       <HeroSection />
       <OfferingsSection />
       <RecoverySection />
-      <SpecialitiesSection />
-      <VettedExpertsSection />
-      <AdvancedPhysiotherapyClinicsSection />
+      {/* <SpecialitiesSection /> */}
+      {/* <VettedExpertsSection /> */}
+      {/* <AdvancedPhysiotherapyClinicsSection /> */}
       <WhatWeTreatSection />
       <FAQSection />
     </main>

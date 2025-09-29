@@ -53,9 +53,9 @@ export function WhyChooseUs() {
     <section className="py-20 bg-white" id="why-choose-us">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold text-gray-500 bg-gray-100 rounded-full px-4 py-2">
+          {/* <span className="text-sm font-semibold text-gray-500 bg-gray-100 rounded-full px-4 py-2">
             Treatment That Blends Competence With Compassion
-          </span>
+          </span> */}
           <h2 className="text-4xl font-bold text-gray-800 mt-4">
             Why Choose Kinetara
           </h2>

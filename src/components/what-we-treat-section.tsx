@@ -4,56 +4,68 @@ import { FaArrowRight } from "react-icons/fa";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const treatmentData = {
-  title: "WHAT WE TREAT",
+  title: "WHAT WE OFFER",
   description:
-    "We provide specialized physiotherapy treatments for neurological, orthopedic, musculoskeletal, pediatric, geriatric, and sports-related conditions — addressing a wide range of symptoms and recovery needs.",
+    "We offer comprehensive physiotherapy care tailored to diverse needs —chiropractic care and sports injury rehabilitation to personalized programs in pain management, spine and orthopedic rehab, and pelvic floor therapy. Our specialized treatments are designed to relieve symptoms, restore mobility, and support recovery at every stage of life.",
   sections: [
-    {
-      title: "Conditions",
-      items: [
-        "Lumbar Spondylosis",
-        "Pes Anserine Bursitis",
-        "Quadriceps Muscle Strain",
-        "Herniated Disk Or Slipped Disc",
-        "Clubfoot Or Congenital Talipes Equinovarus Or Ctev",
-        "Shoulder Impingement",
-        "Tennis Elbow",
-      ],
-    },
-    {
-      title: "Symptoms",
-      items: [
-        "Muscle Stiffness",
-        "Muscle Spasm",
-        "Crepitus – Cracking Joints",
-        "Numbness And Tingling",
-        "Neck Pain",
-        "Back Pain",
-        "Joint Pain",
-      ],
-    },
+    // {
+    //   title: "Conditions",
+    //   items: [
+    //     "Lumbar Spondylosis",
+    //     "Pes Anserine Bursitis",
+    //     "Quadriceps Muscle Strain",
+    //     "Herniated Disk Or Slipped Disc",
+    //     "Clubfoot Or Congenital Talipes Equinovarus Or Ctev",
+    //     "Shoulder Impingement",
+    //     "Tennis Elbow",
+    //   ],
+    // },
+    // {
+    //   title: "Symptoms",
+    //   items: [
+    //     "Muscle Stiffness",
+    //     "Muscle Spasm",
+    //     "Crepitus – Cracking Joints",
+    //     "Numbness And Tingling",
+    //     "Neck Pain",
+    //     "Back Pain",
+    //     "Joint Pain",
+    //   ],
+    // },
     {
       title: "Therapies Offered",
       items: [
         "Interferential Therapy (Ift)",
-        "Chiropractic Therapy",
-        "Ultrasound Therapy",
-        "Laser Therapy",
+        "Chiropractic care",
+        "Ultrasonic Therapy",
         "Cupping Therapy",
+        "Wet Cupping/ Hijama",
+        "Wax Bath Therapy",
+        "Kinesiology Taping",
         "Dry Needling",
-        "Taping",
+        "Transcutaneous Electrical Nerve Stimulation",
+        "Modified Spinal Decompression",
+        "Cryotherapy (Cold Therapy)",
+        "Sports Massage",
+        "Manual Therapy",
+        "Myofacial Release",
+        "IASTM Therapy",
+        "Posture Correction & Ergonomic Training",
+        "Strength and Conditioning"
       ],
     },
     {
       title: "Services Offered",
       items: [
-        "Chiropractor Treatment",
-        "Sports Physiotherapy",
-        "Pediatric Physiotherapy",
-        "Home Care Physiotherapy",
-        "Neuro Physiotherapy - Rehab",
-        "Post-operative Rehab",
-        "Geriatric Physiotherapy",
+        "Chiropractic Care",
+        "Sports Injuries Rehabilitation",
+        "Pain Management",
+        "Spine and Ortho Rehab",
+        "Pelvic Floor Rehab",
+        "Geriatric Rehab",
+        "Neurological Rehab",
+        "Pre and Post Surgery Rehab",
+        "Occupational therapy"
       ],
     },
   ],
@@ -84,7 +96,7 @@ export function WhatWeTreatSection() {
               <h3 className="text-2xl font-semibold text-center text-primary mb-6">
                 {section.title}
               </h3>
-              <ScrollArea className="h-60">
+              <ScrollArea className="h-80">
                 <ul className="pr-4">
                   {section.items.map((item, itemIndex) => (
                     <ListItem key={itemIndex} text={item} />

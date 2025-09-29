@@ -13,52 +13,37 @@ export function AboutContent() {
               height={400}
               className="rounded-lg shadow-lg object-cover w-full h-auto"
             />
-            <div className="absolute bottom-4 right-4 bg-white bg-opacity-90 p-4 rounded-lg shadow-md flex items-center space-x-3">
-              <div className="text-lg md:text-3xl font-bold text-primary">
-                15+
-              </div>
-              <p className="text-muted-foreground">Years Of Experience</p>
-            </div>
           </div>
           <div>
-            <span className="bg-primary-foreground text-primary px-4 py-2 rounded-full text-sm font-semibold">
-              About Us
-            </span>
-            <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold text-primary mt-4">
-              We Are The Best For
-              <span className="text-primary/70"> Physiotherapy</span>
-            </h2>
+            <h4 className="text-2xl md:text-4xl lg:text-4xl font-bold text-primary mt-4">
+              Welcome to Kinetara - The Next-Gen Physiotherapy
+            </h4>
             <div className="text-gray-600 text-lg space-y-4 mt-6">
               <p>
-                CB Physiotherapy is India&#39;s fastest growing Delivery Network
-                for Physiotherapy & Chiropractors services. At CB Physiotherapy,
-                we are committed to increase access to quality physio care
-                through ultra-modern clinics and high-skilled practitioners. Our
-                integrated / multi-therapy approach helps keep a strong focus on
-                patient needs and deliver the highest level of patient centric
-                care with better outcomes
+                At Kinetara, we are a multispecialty physiotherapy clinic dedicated
+                to helping patients recover, heal, and achieve long-term wellness. 
+                We provide specialized care for musculoskeletal and neuromuscular conditions,
+                sports injuries, and cardiac rehabilitation.
+                Our philosophy is simple: we treat the person as a whole, not just the symptoms.
+                By addressing the root cause of the problem, we ensure lasting results and improved
+                quality of life.
               </p>
               <p>
-                We serve a wide range of patients offering treatment at clinic
-                as well as at the comfort of their homes. We make sure that our
-                clinics are not only equipped with the latest equipment’s but
-                also provide clean, energetic and uplifting atmospheres for
-                better healing. For Home Care, our well-established processes
-                ensure delivery of high-quality treatment with superior patient
-                service.
+                We ensure our clinics are equipped with the latest technology while maintaining a clean,
+                positive, uplifting atmosphere to support faster and better recovery.
+                With one of the most advanced physiotherapy setups in Delhi and a team of highly
+                qualified specialists across different domains, Kinetara offers expert-driven,
+                evidence-based treatments tailored to each individual. This makes us a trusted choice 
+                for patients seeking effective and compassionate physiotherapy care.
               </p>
               <p>
-                Rather than transactional engagement with patients, we are
-                committed to partner with our patients in their journey of
-                healing
-              </p>
-              <p>
-                We work with you through your healing from start to finish
-                providing a robust program involving combination of multiple
-                therapies / modalities. Also, after treatment is over, we
-                provide support / guidance to prevent injury from repeating /
-                pain from returning. The happiness on our patient’s faces is
-                what keeps us going.
+                At Kinetara, we believe in building partnerships with our patients rather than
+                limiting interactions to transactional care. We walk alongside you on your journey
+                to recovery — from the very first session through to complete healing — with a 
+                comprehensive program that combines multiple therapies and treatment modalities.
+                Even after your treatment is complete, we continue to provide guidance and preventive
+                care to help you avoid recurring pain or injuries. The smiles and relief we see on 
+                our patients’ faces are our greatest motivation and the true measure of our success.
               </p>
             </div>
           </div>

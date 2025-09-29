@@ -38,23 +38,29 @@ export function Header() {
           >
             Our Offerings
           </Link>
-          <Link
+          {/* <Link
             href="/about#our-team"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             Our team
-          </Link>
+          </Link> */}
           <Link
             href="/about#why-choose-us"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             Why Kinetara
           </Link>
-          <Link
+          {/* <Link
             href="/about#testimonials"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             Testimonials
+          </Link> */}
+           <Link
+            href="/#faq"
+            className="text-primary hover:text-primary/80 font-semibold"
+          >
+            FAQ'S
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
@@ -69,7 +75,7 @@ export function Header() {
             <FaFacebookF className="h-6 w-6 text-primary" />
           </Link>
           <Link
-            href="https://wa.me/1234567890"
+            href="https://wa.me/8800974721"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 text-sm hover:text-accent"

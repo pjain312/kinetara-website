@@ -11,14 +11,14 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="mb-6">
               <Image
-                src="/logo.jpeg" // Assuming you have a white version of the logo
+                src="/logo.png" // Assuming you have a white version of the logo
                 alt="Kinetara Logo"
                 width={100}
                 height={100}
               />
             </div>
             <p className="text-gray-300 max-w-md">
-              The Next-Gen Physiotherapy.
+              Kinetara - The Next-Gen Physiotherapy.
             </p>
             <div className="flex space-x-4 mt-6">
               <Link
@@ -48,6 +48,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/#what-we-treat" className="text-gray-300 hover:text-white">
+                  Our Offerings
+                </Link>
+              </li>
+              <li>
+                <Link href="/about#why-choose-us" className="text-gray-300 hover:text-white">
+                  Why Kinetara
+                </Link>
+              </li>
+              <li>
                 <Link href="/#faq" className="text-gray-300 hover:text-white">
                   FAQ
                 </Link>
@@ -61,10 +71,10 @@ export function Footer() {
             <div className="flex items-center text-gray-300">
               <FaEnvelope className="mr-3" />
               <Link
-                href="mailto:help@kinetara.com"
+                href="mailto:kinetaraphysiotherapy@gmail.com"
                 className="hover:text-white"
               >
-                help@kinetara.com
+                kinetaraphysiotherapy@gmail.com
               </Link>
             </div>
           </div>
@@ -72,7 +82,7 @@ export function Footer() {
 
         <div className="border-t border-white mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white">
           <p>Copyright 2025 Kinetara. All Rights Reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          {/* <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white">
               Terms And Conditions
             </Link>
@@ -82,7 +92,7 @@ export function Footer() {
             <Link href="#" className="hover:text-white">
               Privacy Policy
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

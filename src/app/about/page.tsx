@@ -8,12 +8,12 @@ import { FasterLastingRecovery } from "@/components/faster-lasting-recovery";
 export default function AboutPage() {
   return (
     <main>
-      <AboutHero />
+      {/* <AboutHero /> */}
       <AboutContent />
       <WhyChooseUs />
-      <TherapistTeam />
-      <Testimonials />
-      <FasterLastingRecovery />
+      {/* <TherapistTeam /> */}
+      {/* <Testimonials /> */}
+      {/* <FasterLastingRecovery /> */}
     </main>
   );
 }
