@@ -60,7 +60,7 @@ export function Header() {
             href="/#faq"
             className="text-primary hover:text-primary/80 font-semibold"
           >
-            FAQ'S
+            FAQ&#39;S
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
