@@ -6,9 +6,9 @@ const navigationItems = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Our Offerings", href: "/#what-we-treat" },
-  { name: "Our team", href: "/about#our-team" },
+  // { name: "Our team", href: "/about#our-team" },
   { name: "Why Kinetara", href: "/about#why-choose-us" },
-  { name: "Testimonials", href: "/about#testimonials" },
+  { name: "FAQ'S", href: "/#faq" },
 ];
 
 export function MobileNav() {
