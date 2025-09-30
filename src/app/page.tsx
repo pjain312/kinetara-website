@@ -28,7 +28,7 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <OfferingsSection />
-      <RecoverySection />
+      {/* <RecoverySection /> */}
       {/* <SpecialitiesSection /> */}
       {/* <VettedExpertsSection /> */}
       {/* <AdvancedPhysiotherapyClinicsSection /> */}
