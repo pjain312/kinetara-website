@@ -9,6 +9,9 @@ import { SideContactButtons } from "@/components/hero-section";
 export const metadata: Metadata = {
   title: "Kinetara",
   description: "Kinetara",
+  other: {
+    "facebook-domain-verification": "bmsrzhokqm7u2pajz67c2i0xsqqu17",
+  },
 };
 
 export default function RootLayout({
