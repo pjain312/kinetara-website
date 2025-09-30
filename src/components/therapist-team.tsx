@@ -4,30 +4,11 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "N Saquib Lachoo",
+    name: "Dr. Palak",
     role: "Founder",
     avatar: "/assets/team-member1.jpg",
   },
-  {
-    name: "Dr. Soumyendro Chatterjee",
-    role: "Clinical Advisor / Consultant",
-    avatar: "/assets/team-member2.jpg",
-  },
-  {
-    name: "Ankit Mathur",
-    role: "Advisor / Investor",
-    avatar: "/assets/team-member3.jpg",
-  },
-  {
-    name: "Dr Deepanshu Khatri",
-    role: "Head Operations",
-    avatar: "/assets/team-member1.jpg",
-  },
-  {
-    name: "Dr Natasha Saleem - PT",
-    role: "Head - Clinical Process",
-    avatar: "/assets/team-member2.jpg",
-  },
+  
 ];
 
 export function TherapistTeam() {
@@ -36,7 +17,6 @@ export function TherapistTeam() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">
-            CB Physiotherapy Team
           </span>
           <h2 className="text-4xl font-bold text-gray-800 mt-4">
             Our Dedicated & Experienced Therapist Team

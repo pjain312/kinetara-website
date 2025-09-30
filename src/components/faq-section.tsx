@@ -5,36 +5,41 @@ import { FaArrowRight, FaArrowDown } from "react-icons/fa";
 
 const faqData = [
   {
-    question: "What Is Precision Care For Pain-Free Mobility?",
+    question: "What conditions do you treat?",
     answer:
-      "Precision Care for Pain-Free Mobility is CB Physiotherapy's technology-driven approach to physiotherapy treatment. It uses AI-powered diagnosis and personalized rehabilitation plans to deliver targeted pain relief and improve mobility. Whether you're visiting one of our advanced physiotherapy clinics, opting for home physiotherapy, or using our tele-rehabilitation services, this approach ensures effective, expert-led care tailored to your specific needs — helping you recover faster and move better.",
+      "We help with a wide range of issues, including back and neck pain, sports injuries, post-surgical rehab, joint problems, posture correction, and chronic pain management.",
   },
   {
-    question: "What Are The Services Offered By Cb Physiotherapy In India?",
+    question: "Do I need a doctor’s referral to start physiotherapy at Kinetara?",
     answer:
-      "CB Physiotherapy offers a wide range of services in India, including but not limited to: musculoskeletal physiotherapy, neurological physiotherapy, sports injury rehabilitation, pediatric physiotherapy, geriatric physiotherapy, and home care physiotherapy.",
-  },
-  {
-    question:
-      "Do You Offer Remote Physiotherapy / Virtual Physiotherapy To Overseas Patients.",
-    answer:
-      "Yes, we offer remote and virtual physiotherapy sessions to overseas patients. Our tele-rehabilitation services allow you to connect with our expert physiotherapists from the comfort of your home, anywhere in the world.",
+      "No, you can book an appointment directly. If required, we collaborate with your doctor to ensure comprehensive care.",
   },
   {
     question:
-      "How Do I Book An Appointment For Clinic Or Home Physiotherapy Services?",
+      "Will my pain come back after treatment?",
     answer:
-      "You can book an appointment through our website, by calling our central helpline, or by using our mobile app. We offer flexible scheduling for both in-clinic and home physiotherapy sessions.",
+      "Our focus is not just on recovery but also on prevention. We educate you, track progress, and provide ongoing support to reduce the chances of relapse.",
   },
   {
-    question: "What Conditions Do You Treat At Cb Physiotherapy?",
+    question:
+      "Is physiotherapy covered by insurance?",
     answer:
-      "We treat a wide variety of conditions, including back pain, neck pain, joint pain, arthritis, sports injuries, post-operative conditions, neurological disorders like stroke and Parkinsons, and pediatric conditions like developmental delays.",
+      "Coverage depends on your insurance policy. We can provide the necessary documentation for reimbursement, and our team is happy to guide you.",
   },
   {
-    question: "Are Your Physiotherapists Certified And Experienced?",
+    question: "What should I bring to my first appointment?",
     answer:
-      "All our physiotherapists are certified, highly experienced, and undergo regular training to stay updated with the latest advancements in physiotherapy. We pride ourselves on having a team of expert and dedicated professionals.",
+      "Any medical reports, prescriptions, or scans related to your condition, along with comfortable clothing for movement-based assessment.",
+  },
+  {
+    question: "Do you offer online/virtual consultations?",
+    answer:
+      "Yes, for certain cases we provide tele-physiotherapy sessions, including guided assessments, exercise plans, and follow-ups.",
+  },
+  {
+    question: "How soon will I start seeing results?",
+    answer:
+      "Recovery timelines vary, but many patients notice improvements within the first few sessions. With regular therapy and adherence to your program, results are measurable and lasting.",
   },
 ];
 

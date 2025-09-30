@@ -13,25 +13,16 @@ import { Rating } from "@/components/ui/rating";
 
 const clinics = [
   {
-    name: "PHYSIOTHERAPY JANGLAT MANDI",
+    name: "",
     rating: 5.0,
-    specialty: "Spine & Sports Physiotherapy Center",
-    address: "Iqbalabad, Near Yateem Trust, Janglat Mandi, Anantnag, 192101",
-    contact: "08082666216",
+    specialty: "",
+    address: "",
+    contact: "",
     hours: "8am To 8pm",
     linkedin: "#",
     image: "/assets/clinic1.jpg",
   },
-  {
-    name: "CB PHYSIOTHERAPY HITECH CITY",
-    rating: 5.0,
-    specialty: "Ortho & Sports Physiotherapy Center",
-    address: "Hyderabad, Telangana, 500081",
-    contact: "08082666216",
-    hours: "8am To 8pm",
-    linkedin: "#",
-    image: "/assets/clinic2.jpg",
-  },
+
 ];
 
 const responsive = {

@@ -71,12 +71,9 @@ export function SpecialitiesSection() {
     <section className="py-20 bg-primary-foreground">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4 ">
-          CB Specialities
         </h2>
         <p className="text-center  mb-12 max-w-2xl mx-auto">
-          CB Physiotherapy offers expert physiotherapy treatments across
-          multiple specialities and locations. Contact us to check the
-          availability of physiotherapists near you.
+         
         </p>
       </div>
       <Carousel

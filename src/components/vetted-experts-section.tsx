@@ -7,12 +7,11 @@ import { FaFacebookF, FaLinkedinIn, FaGoogle } from "react-icons/fa";
 
 const experts = [
   {
-    name: "Dr. Iqra Altaf",
+    name: "Dr. Palak",
     specialty: "Physiotherapist",
     image: "/assets/doctor1.jpg",
     hoverContent: {
-      title: "Dr. Iqra Altaf – Senior Consultant Physiotherapist",
-      location: "CB Physiotherapy, Vasant Kunj, South Delhi",
+      title: "Dr. Palak – Senior Consultant Physiotherapist",
       social: {
         facebook: "#",
         linkedin: "#",
@@ -20,63 +19,7 @@ const experts = [
       },
     },
   },
-  {
-    name: "Dr. Rahul Dogra",
-    specialty: "Ortho Physiotherapist",
-    image: "/assets/doctor2.jpg",
-    hoverContent: {
-      title: "Dr. Rahul Dogra – Senior Consultant",
-      location:
-        "Physiotherapist | CB Physiotherapy, Vasant Kunj, South Delhi Dr. Rahul Dogra (PT) i...",
-      social: {
-        facebook: "#",
-        linkedin: "#",
-        google: "#",
-      },
-    },
-  },
-  {
-    name: "Dr. Mukesh Saran",
-    specialty: "Sports Physiotherapist",
-    image: "/assets/doctor3.jpg",
-    hoverContent: {
-      title: "Dr. Mukesh Saran – Senior Consultant Physiotherapist",
-      location: "CB Physiotherapy, Vasant Kunj, South Delhi",
-      social: {
-        facebook: "#",
-        linkedin: "#",
-        google: "#",
-      },
-    },
-  },
-  {
-    name: "Dr. Diksha Jamwal",
-    specialty: "Physiotherapist",
-    image: "/assets/doctor1.jpg",
-    hoverContent: {
-      title: "Dr. Diksha Jamwal – Senior Consultant Physiotherapist",
-      location: "CB Physiotherapy, Vasant Kunj, South. Delhi",
-      social: {
-        facebook: "#",
-        linkedin: "#",
-        google: "#",
-      },
-    },
-  },
-  {
-    name: "Dr. Iqra Altaf",
-    specialty: "Physiotherapist",
-    image: "/assets/doctor2.jpg",
-    hoverContent: {
-      title: "Dr. Iqra Altaf – Senior Consultant Physiotherapist",
-      location: "CB Physiotherapy, Vasant Kunj, South Delhi",
-      social: {
-        facebook: "#",
-        linkedin: "#",
-        google: "#",
-      },
-    },
-  },
+  
 ];
 
 const responsive = {
@@ -138,7 +81,7 @@ export function VettedExpertsSection() {
                       {expert.hoverContent.title}
                     </p>
                     <p className="text-white text-xs mt-2 px-2">
-                      {expert.hoverContent.location}
+                      {/* {expert.hoverContent.location} */}
                     </p>
                     <div className="flex justify-center space-x-3 mt-4">
                       <a

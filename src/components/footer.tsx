@@ -11,15 +11,15 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="mb-6">
               <Image
-                src="/logo.png" // Assuming you have a white version of the logo
+                src="/white-logo.png" // Assuming you have a white version of the logo
                 alt="Kinetara Logo"
-                width={100}
-                height={100}
+                width={120}
+                height={120}
               />
             </div>
-            <p className="text-gray-300 max-w-md">
+            {/* <p className="text-gray-300 max-w-md">
               Kinetara - The Next-Gen Physiotherapy.
-            </p>
+            </p> */}
             <div className="flex space-x-4 mt-6">
               <Link
                 href="https://www.facebook.com/people/Kinetara-Physiotherapy/pfbid02utNCg3n7Sc1jhEqzicU4mwUuwTy5HfmqFDfcDpVvgWA3dpCD3S8pDprd3xS4E6Xnl/?mibextid=wwXIfr&rdid=p8ZNVtivQwBp1s3s&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16p8qbbJjD%2F%3Fmibextid%3DwwXIfr"
@@ -53,7 +53,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about#why-choose-us" className="text-gray-300 hover:text-white">
+                <Link href="/about" className="text-gray-300 hover:text-white">
                   Why Kinetara
                 </Link>
               </li>

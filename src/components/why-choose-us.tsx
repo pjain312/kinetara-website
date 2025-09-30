@@ -13,8 +13,7 @@ const features = [
   {
     icon: <Plus size={32} />,
     title: "+ 500 Practitioners",
-    description:
-      "CBP has a strong network of over 500 physiotherapists/chiropractors enrolled through a structured empanelment criterion.",
+    description:""
   },
   {
     icon: <Briefcase size={32} />,

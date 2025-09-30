@@ -2,10 +2,7 @@
 import { Sparkles } from "lucide-react";
 
 const bannerItems = [
-  "Appointment: +91 9821966696",
   "Working Hours : Sun to Sat : 8:00 AM To 8:00 PM",
-  "Emergency No. : 011 4084 6393",
-  "For any additional info, email us at info@cbphysiotherapy.com",
 ];
 
 export function ScrollingBanner() {
