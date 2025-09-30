@@ -68,7 +68,7 @@ export function Header() {
             <MapPinIcon className="h-6 w-6 text-primary" />
           </Link>
           <Link
-            href="https://www.facebook.com/people/Kinetara-Physiotherapy/pfbid02utNCg3n7Sc1jhEqzicU4mwUuwTy5HfmqFDfcDpVvgWA3dpCD3S8pDprd3xS4E6Xnl/?mibextid=wwXIfr&rdid=p8ZNVtivQwBp1s3s&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16p8qbbJjD%2F%3Fmibextid%3DwwXIfr"
+            href="https://www.facebook.com/kinetaraphysiotherapy/"
             target="_blank"
             className="hover:text-accent"
           >

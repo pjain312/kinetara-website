@@ -22,7 +22,7 @@ export function Footer() {
             </p> */}
             <div className="flex space-x-4 mt-6">
               <Link
-                href="https://www.facebook.com/people/Kinetara-Physiotherapy/pfbid02utNCg3n7Sc1jhEqzicU4mwUuwTy5HfmqFDfcDpVvgWA3dpCD3S8pDprd3xS4E6Xnl/?mibextid=wwXIfr&rdid=p8ZNVtivQwBp1s3s&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16p8qbbJjD%2F%3Fmibextid%3DwwXIfr"
+                href="https://www.facebook.com/kinetaraphysiotherapy/"
                 target="_blank"
                 className="text-gray-300 hover:text-white"
               >

@@ -20,7 +20,7 @@ export default function HomePage() {
               "@type": "Organization",
               "name": "Kinetara",
               "url": "https://www.kinetaraphysiotherapy.com",
-              "logo": "https://www.kinetaraphysiotherapy.com/logo.png"
+              "logo": "https://www.kinetaraphysiotherapy.com/android-chrome.png"
             })
           }}
         />
