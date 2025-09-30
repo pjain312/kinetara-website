@@ -18,7 +18,7 @@ export function AboutContent() {
             <h4 className="text-2xl md:text-4xl lg:text-4xl font-bold text-primary">
               Welcome to Kinetara - The Next-Gen Physiotherapy
             </h4>
-            <div className="text-gray-600 text-lg">
+            <div className="text-gray-600 text-lg space-y-4 mt-6">
               <p>
                 At Kinetara, we believe recovery is more than just treatment – it’s a journey towards
                 strength, confidence, and lasting wellness. Founded with a vision to redefine physiotherapy,
