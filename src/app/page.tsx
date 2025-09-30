@@ -12,6 +12,7 @@ export default function HomePage() {
   return (
     <>
     <Head>
+    <meta name="facebook-domain-verification" content="bmsrzhokqm7u2pajz67c2i0xsqqu17" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
