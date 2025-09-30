@@ -45,7 +45,7 @@ export function Header() {
             Our team
           </Link> */}
           <Link
-            href="/about"
+            href="/about#why-choose-us"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             Why Kinetara

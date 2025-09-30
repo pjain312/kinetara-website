@@ -15,35 +15,28 @@ export function AboutContent() {
             />
           </div>
           <div>
-            <h4 className="text-2xl md:text-4xl lg:text-4xl font-bold text-primary mt-4">
+            <h4 className="text-2xl md:text-4xl lg:text-4xl font-bold text-primary">
               Welcome to Kinetara - The Next-Gen Physiotherapy
             </h4>
-            <div className="text-gray-600 text-lg space-y-4 mt-6">
+            <div className="text-gray-600 text-lg">
               <p>
-                At Kinetara, we are a multispecialty physiotherapy clinic dedicated
-                to helping patients recover, heal, and achieve long-term wellness. 
-                We provide specialized care for musculoskeletal and neuromuscular conditions,
-                sports injuries, and cardiac rehabilitation.
-                Our philosophy is simple: we treat the person as a whole, not just the symptoms.
-                By addressing the root cause of the problem, we ensure lasting results and improved
-                quality of life.
+                At Kinetara, we believe recovery is more than just treatment – it’s a journey towards
+                strength, confidence, and lasting wellness. Founded with a vision to redefine physiotherapy,
+                Kinetara combines clinical expertise, advanced technology, and personalized care to help you heal
+                faster and prevent future setbacks.
               </p>
               <p>
-                We ensure our clinics are equipped with the latest technology while maintaining a clean,
-                positive, uplifting atmosphere to support faster and better recovery.
-                With one of the most advanced physiotherapy setups in Delhi and a team of highly
-                qualified specialists across different domains, Kinetara offers expert-driven,
-                evidence-based treatments tailored to each individual. This makes us a trusted choice 
-                for patients seeking effective and compassionate physiotherapy care.
+                Our approach goes beyond quick fixes. Every recovery plan begins with a detailed
+                root-cause assessment, ensuring that we don’t just manage your symptoms, but address 
+                the underlying issue. With evidence-based therapies, modern equipment, and compassionate 
+                guidance, we partner with you from the very first session until you’re back to living life 
+                without limitations.
+
               </p>
               <p>
-                At Kinetara, we believe in building partnerships with our patients rather than
-                limiting interactions to transactional care. We walk alongside you on your journey
-                to recovery — from the very first session through to complete healing — with a 
-                comprehensive program that combines multiple therapies and treatment modalities.
-                Even after your treatment is complete, we continue to provide guidance and preventive
-                care to help you avoid recurring pain or injuries. The smiles and relief we see on 
-                our patients’ faces are our greatest motivation and the true measure of our success.
+                Whether you’re overcoming pain, recovering from an injury, or enhancing performance, Kinetara is 
+                your trusted partner in lasting recovery. Because at Kinetara, it’s not just about feeling better 
+                today — it’s about moving stronger tomorrow.
               </p>
             </div>
           </div>

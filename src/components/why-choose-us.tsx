@@ -2,48 +2,48 @@
 
 import {
   Briefcase,
-  Calendar,
-  MessageSquare,
-  Plus,
-  Headphones,
-  Lightbulb,
+  Goal,
+  Handshake,
+  Infinity,
+  NotebookPen,
+  Repeat
 } from "lucide-react";
 
 const features = [
   {
-    icon: <Plus size={32} />,
-    title: "+ 500 Practitioners",
-    description:""
+    icon:<Goal size={32}/>,
+    title: "Root-Cause Focused",
+    description:"We don’t just treat symptoms, we identify and resolve the underlying problem."
   },
   {
     icon: <Briefcase size={32} />,
-    title: "Integrated Approach",
+    title: "Expert-Led Care",
     description:
-      "Our integrated / multi-therapy approach enables us take a holistic view of patient needs and provide and outcome-based treatment.",
+      "Every session is guided by qualified physiotherapists with advanced training and precision. Next-Gen Techniques – We blend proven physiotherapy methods.",
   },
   {
-    icon: <Calendar size={32} />,
-    title: "Treatment Scheduling",
+    icon: <NotebookPen size={32} />,
+    title: "Personalized Recovery Plans",
     description:
-      "Instant confirmation of clinic appointment & home visit is confirmed within 30 mins. We try our best to not change a physio for ongoing treatments.",
+      "No two patients are the same. Your care is tailored to your body, lifestyle, and goals.",
   },
   {
-    icon: <Headphones size={32} />,
-    title: "Always Listening",
+    icon: <Infinity size={32} />,
+    title: "Preventive & Long-Term Support",
     description:
-      "Continuous monitoring of treatment progress with feedback & Counseling calls. Pro-active grievance redressal to ensure a smooth path to your recovery.",
+      "Beyond recovery, we equip you with strategies to prevent recurrence and stay strong.",
   },
   {
-    icon: <Lightbulb size={32} />,
-    title: "Payments",
+    icon: <Handshake size={32} />,
+    title: "Patient-Centered Approach",
     description:
-      "Transparent Pricing with friendly packages for long term treatments. Option to pay through cash, card or online withinsurance re-imbursement friendly billing.",
+      "We partner with you throughout your healing journey, not just during clinic visits.",
   },
   {
-    icon: <MessageSquare size={32} />,
-    title: "12*7 Support",
+    icon: <Repeat size={32} />,
+    title: "Lasting Recovery",
     description:
-      "Help is just a text Away. 12*7 support on WhatsApp for any query or concern for your new appointments sorfor an ongoing physio treatment.",
+      "At Kinetara, recovery isn’t temporary — it’s faster, smarter, and lasting.",
   },
 ];
 
@@ -52,12 +52,10 @@ export function WhyChooseUs() {
     <section className="py-20 bg-white" id="why-choose-us">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          {/* <span className="text-sm font-semibold text-gray-500 bg-gray-100 rounded-full px-4 py-2">
-            Treatment That Blends Competence With Compassion
-          </span> */}
-          <h2 className="text-4xl font-bold text-gray-800 mt-4">
+          <h2 className="text-4xl font-bold text-gray-800 mt-4 mb-4">
             Why Choose Kinetara
           </h2>
+          <span className="text-gray-600">Choosing the right physiotherapy partner can make all the difference in your recovery. At Kinetara, we stand apart because</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (

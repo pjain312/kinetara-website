@@ -7,7 +7,7 @@ const navigationItems = [
   { name: "About Us", href: "/about" },
   { name: "Our Offerings", href: "/#what-we-treat" },
   // { name: "Our team", href: "/about#our-team" },
-  { name: "Why Kinetara", href: "/about" },
+  { name: "Why Kinetara", href: "/about#why-choose-us" },
   { name: "FAQ'S", href: "/#faq" },
 ];
 

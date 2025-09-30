@@ -10,7 +10,7 @@ export default function AboutPage() {
     <main>
       {/* <AboutHero /> */}
       <AboutContent />
-      {/* <WhyChooseUs /> */}
+      <WhyChooseUs />
       {/* <TherapistTeam /> */}
       {/* <Testimonials /> */}
       {/* <FasterLastingRecovery /> */}
