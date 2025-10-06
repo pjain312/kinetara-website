@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "Dr. Palak Jain",
+    name: "Dr. Palak Jain PT",
     role: "Founder | HOD",
     avatar: "/assets/team-member-1.jpeg",
     experience: "7+ years",
-    qualification: "BPT, MPT- Ortho, MIAP, COMT (Certified Orthopaedic Manual Therapist), CKTP (Certified Therapeutic Taping Practitioner), IASTM Practitioner, Cupping Certified Pregnancy & Pelvic Floor Specialist."
+    qualification: "BPT, MPT- Ortho, MIAP, Certified Orthopaedic Manual Therapist (COMT), Certified Therapeutic Taping Practitioner (CKTP), IASTM Practitioner, Certified Cupping Therapist (CCT), Certified Pregnancy & Pelvic Floor Specialist."
   },
   {
-    name: "Dr. Ammar Ali Khan",
+    name: "Dr. Ammar Ali Khan PT",
     role: "Sr. Physiotherapist",
     avatar: "/assets/team-member-2.jpeg",
     experience: "3+ years",
