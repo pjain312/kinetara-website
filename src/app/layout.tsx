@@ -39,7 +39,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Kinetara",
               "url": "https://www.kinetaraphysiotherapy.com",
-              "logo": "https://www.kinetaraphysiotherapy.com/android-chrome.png",
+              "logo": "https://www.kinetaraphysiotherapy.com/android-chrome-512x512.png",
               "sameAs": [
                     "https://www.facebook.com/kinetaraphysiotherapy/",
                     "https://www.instagram.com/kinetara.physiotherapy/",
