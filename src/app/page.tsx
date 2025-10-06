@@ -35,7 +35,7 @@ export default function HomePage() {
       {/* <RecoverySection /> */}
       {/* <SpecialitiesSection /> */}
       {/* <VettedExpertsSection /> */}
-      {/* <AdvancedPhysiotherapyClinicsSection /> */}
+      <AdvancedPhysiotherapyClinicsSection />
       <WhatWeTreatSection />
       <FAQSection />
     </main>

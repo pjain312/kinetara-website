@@ -1,26 +1,75 @@
 "use client";
 
+import { Rating } from "@/components/ui/rating";
 import Image from "next/image";
+import {
+  FaClock,
+  FaMapMarkerAlt,
+  FaPhoneAlt
+} from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import {
-  FaLinkedinIn,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaClock,
-} from "react-icons/fa";
-import { Rating } from "@/components/ui/rating";
 
 const clinics = [
   {
-    name: "",
+    name: "Kinetara (CR Park)",
     rating: 5.0,
-    specialty: "",
-    address: "",
-    contact: "",
-    hours: "8am To 8pm",
-    linkedin: "#",
-    image: "/assets/clinic1.jpg",
+    specialty: "Physiotherapy",
+    address: "D-584, LGF, CR Park, New Delhi - 110019",
+    contact: "8800974721",
+    hours: "9am To 6pm",
+    // linkedin: "#",
+    image: "/assets/clinics1.jpg"
+  },
+  {
+    name: "Kinetara (CR Park)",
+    rating: 5.0,
+    specialty: "Physiotherapy",
+    address: "D-584, LGF, CR Park, New Delhi - 110019",
+    contact: "8800974721",
+    hours: "9am To 6pm",
+    // linkedin: "#",
+    image: "/assets/clinic5.jpg",
+  },
+  {
+    name: "Kinetara (CR Park)",
+    rating: 5.0,
+    specialty: "Physiotherapy",
+    address: "D-584, LGF, CR Park, New Delhi - 110019",
+    contact: "8800974721",
+    hours: "9am To 6pm",
+    // linkedin: "#",
+    image: "/assets/clinic6.jpg",
+  },
+  {
+    name: "Kinetara (CR Park)",
+    rating: 5.0,
+    specialty: "Physiotherapy",
+    address: "D-584, LGF, CR Park, New Delhi - 110019",
+    contact: "8800974721",
+    hours: "9am To 6pm",
+    // linkedin: "#",
+    image: "/assets/clinic2.jpg",
+  },
+  {
+    name: "Kinetara (CR Park)",
+    rating: 5.0,
+    specialty: "Physiotherapy",
+    address: "D-584, LGF, CR Park, New Delhi - 110019",
+    contact: "8800974721",
+    hours: "9am To 6pm",
+    // linkedin: "#",
+    image: "/assets/clinic3.jpg",
+  },
+  {
+    name: "Kinetara (CR Park)",
+    rating: 5.0,
+    specialty: "Physiotherapy",
+    address: "D-584, LGF, CR Park, New Delhi - 110019",
+    contact: "8800974721",
+    hours: "9am To 6pm",
+    // linkedin: "#",
+    image: "/assets/clinic4.jpg",
   },
 
 ];
@@ -66,18 +115,21 @@ export function AdvancedPhysiotherapyClinicsSection() {
               <div className="relative h-96 rounded-lg overflow-hidden">
                 <Image
                   src={clinic.image}
-                  alt={clinic.name}
+                  alt={"Kinetara (CR Park)"}
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="flex flex-col justify-center">
-                <h3 className="text-3xl font-bold">{clinic.name}</h3>
+                <h3 className="text-3xl font-bold">{"Kinetara - THE NEXT-GEN PHYSIOTHERAPY"}</h3>
                 <div className="flex items-center my-2">
                   <Rating value={clinic.rating} readOnly />
                   <span className="ml-2 text-lg">{clinic.rating}</span>
                 </div>
-                <p className="font-semibold mb-4">{clinic.specialty}</p>
+                <p className="font-semibold mb-4">
+                  Pain Management | Spine and Ortho Rehab | Sports Injury Rehab |
+                   Pelvic Floor Rehab | Chiropractic care | Geriatric Rehab | Neuro Rehab |
+                   Occupational Therapy</p>
                 <div className="flex items-start mb-2">
                   <FaMapMarkerAlt className="mr-2 mt-1" />
                   <p>{clinic.address}</p>
@@ -90,9 +142,9 @@ export function AdvancedPhysiotherapyClinicsSection() {
                   <FaClock className="mr-2" />
                   <p>Opening Hours - {clinic.hours}</p>
                 </div>
-                <a href={clinic.linkedin}>
+                {/* <a href={clinic.linkedin}>
                   <FaLinkedinIn className="text-2xl" />
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

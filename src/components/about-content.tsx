@@ -7,11 +7,11 @@ export function AboutContent() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src="/assets/about.jpg"
+              src="/assets/about-photo.jpg"
               alt="Physiotherapy session"
               width={400}
-              height={400}
-              className="rounded-lg shadow-lg object-cover w-full h-auto"
+              height={300}
+              className="rounded-lg shadow-lg object-cover w-full h-[600px]"
             />
           </div>
           <div>

@@ -38,12 +38,12 @@ export function Header() {
           >
             Our Offerings
           </Link>
-          {/* <Link
+          <Link
             href="/about#our-team"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             Our team
-          </Link> */}
+          </Link>
           <Link
             href="/about#why-choose-us"
             className="text-primary hover:text-primary/80 font-semibold"
@@ -64,7 +64,7 @@ export function Header() {
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
-          <Link href="/">
+          <Link target="_blank" href="https://maps.app.goo.gl/i3vgVT1KAvkmWSBy9">
             <MapPinIcon className="h-6 w-6 text-primary" />
           </Link>
           <Link

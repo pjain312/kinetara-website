@@ -10,10 +10,10 @@ export function OfferingsSection() {
               <BriefcaseMedicalIcon className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-2">Advanced Clinics</h3>
+              <h3 className="text-xl font-bold mb-2">Next-Gen Physiotherapy Center</h3>
               <p className="text-white/80">
-                Modern Infrastructure, Latest Technology & Top Physiotherapy
-                Experts
+                Experience advanced rehabilitation in state-of-the-art facilities powered by modern equipment, 
+                innovative techniques, and expert clinical care.
               </p>
             </div>
           </div>
@@ -22,10 +22,10 @@ export function OfferingsSection() {
               <HomeIcon className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-2">Professional Home Care</h3>
+              <h3 className="text-xl font-bold mb-2">Physiotherapy Beyond the Clinic</h3>
               <p className="text-white/80">
-                Physiotherapy at home with expert oversight & Strong quality
-                checks
+                Receive personalized physiotherapy in the comfort of your home — guided by Kinetara’s 
+                trusted professionals for safe, effective recovery.
               </p>
             </div>
           </div>
@@ -34,10 +34,10 @@ export function OfferingsSection() {
               <LaptopIcon className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-2">Tele / Remote Rehab</h3>
+              <h3 className="text-xl font-bold mb-2">Connected Recovery Programs</h3>
               <p className="text-white/80">
-                Personalized Physio exercises at home with Continuous guidance &
-                mentoring
+                Stay on track with interactive, remote physiotherapy sessions designed 
+                for continuous support, progress monitoring, and expert feedback.
               </p>
             </div>
           </div>

@@ -4,10 +4,20 @@ import Image from "next/image";
 
 const team = [
   {
-    name: "Dr. Palak",
-    role: "Founder",
-    avatar: "/assets/team-member1.jpg",
+    name: "Dr. Palak Jain",
+    role: "Founder | HOD",
+    avatar: "/assets/team-member-1.jpeg",
+    experience: "7+ years",
+    qualification: "BPT, MPT- Ortho, MIAP, COMT (Certified Orthopaedic Manual Therapist), CKTP (Certified Therapeutic Taping Practitioner), IASTM Practitioner, Cupping Certified Pregnancy & Pelvic Floor Specialist."
   },
+  {
+    name: "Dr. Ammar Ali Khan",
+    role: "Sr. Physiotherapist",
+    avatar: "/assets/team-member-2.jpeg",
+    experience: "3+ years",
+    qualification: "BPT, MIAP, Certified Dry Needling Therapist (CDNT), Certified Cupping Therapist (CCT), Certified Therapeutic Taping Practitioner (CKTP)"
+  },
+
   
 ];
 
@@ -16,10 +26,8 @@ export function TherapistTeam() {
     <section className="py-20" id="our-team">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">
-          </span>
           <h2 className="text-4xl font-bold text-gray-800 mt-4">
-            Our Dedicated & Experienced Therapist Team
+            Your Recovery Partners — Skilled, Trusted, Proven
           </h2>
         </div>
         <div className="flex flex-wrap justify-center gap-8">
@@ -37,7 +45,13 @@ export function TherapistTeam() {
               <h3 className="text-xl font-semibold text-gray-800">
                 {member.name}
               </h3>
-              <p className="text-gray-500">{member.role}</p>
+              <p className="text-gray-600 font-medium mb-1">{member.role}</p>
+              <p className="text-blue-600 font-medium text-sm mb-2">{member.experience} of experience</p>
+              {member.qualification && (
+                <p className="text-gray-500 text-sm leading-relaxed max-w-[240px] mx-auto">
+                  {member.qualification}
+                </p>
+              )}
             </div>
           ))}
         </div>

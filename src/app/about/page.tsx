@@ -11,7 +11,7 @@ export default function AboutPage() {
       {/* <AboutHero /> */}
       <AboutContent />
       <WhyChooseUs />
-      {/* <TherapistTeam /> */}
+      <TherapistTeam />
       {/* <Testimonials /> */}
       {/* <FasterLastingRecovery /> */}
     </main>
