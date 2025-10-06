@@ -31,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <head>
+       <link rel="canonical" href="https://www.kinetaraphysiotherapy.com/" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
