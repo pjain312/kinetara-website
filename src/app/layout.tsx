@@ -9,6 +9,15 @@ import { SideContactButtons } from "@/components/hero-section";
 export const metadata: Metadata = {
   title: "Kinetara",
   description: "Kinetara",
+  icons: {
+    icon: "/favicon.ico",            // your favicon (ICO or PNG)
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",  // for Apple devices
+    other: [
+      { rel: "icon", url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512" },
+    ],
+  },
   other: {
     "facebook-domain-verification": "bmsrzhokqm7u2pajz67c2i0xsqqu17",
   },

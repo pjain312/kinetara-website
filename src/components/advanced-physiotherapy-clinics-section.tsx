@@ -86,13 +86,10 @@ export function AdvancedPhysiotherapyClinicsSection() {
     <section className="py-20 bg-primary-foreground">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4 text-[#153C33]">
-          ADVANCED PHYSIOTHERAPY CLINICS
+          NEXT-GEN PHYSIOTHERAPY CLINIC
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Experience expert physiotherapy at our advanced clinics near you –
-          equipped with the latest technologies for spine care, sports injury
-          rehabilitation, and chiropractic treatment to ensure effective,
-          personalized recovery.
+          Expert physiotherapy at advanced clinics — modern care for spine, sports, and chiropractic recovery.
         </p>
       </div>
       <div className="container mx-auto">
