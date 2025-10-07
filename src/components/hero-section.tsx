@@ -8,20 +8,25 @@ export function HeroSection() {
     <section
       className="relative bg-cover bg-center py-52 text-white"
       style={{ backgroundImage: "url('/assets/home-page.png')" }}
+      aria-label="Physiotherapist treating patient at Kinetara Physiotherapy Clinic in CR Park South Delhi"
     >
       <div className="absolute inset-0 bg-black/50" />
       <div className="container mx-auto flex justify-center px-4 relative">
         <div className="max-w-4xl">
-        <h1 className="text-5xl font-bold leading-tight md:text-6xl">  
-          Restoring Strength,
+        <h1 className="text-4xl font-bold leading-tight md:text-5xl">  
+          Restoring Strength, Mobility & Confidence – 
           <br/>
-           Mobility & Confidence  
+           Trusted Physiotherapy Clinic in
+           <br/>
+           CR Park, South Delhi  
         </h1>  
-        <p className="mt-4 text-lg md:text-xl max-w-2xl">  
-          From chiropractic care and sports injury rehab to pain management, 
-          spine & ortho therapy, pelvic floor, neurological, geriatric, and 
-          post-surgery recovery — we provide expert, personalized care to help 
-          you move better and live pain-free.  
+        <p className="mt-4 text-lg md:text-xl max-w-3xl">  
+          At <b>Kinetara Physiotherapy Clinic in CR Park, South Delhi,</b> we specialize in 
+          personalized physiotherapy treatments — from <b>chiropractic care, sports injury rehab, 
+          and pain management</b> to <b>spine & orthopedic therapy, pelvic floor rehabilitation, neurological 
+          and post-surgery recovery.</b> Our expert physiotherapists help you <b>move better, recover faster, 
+          and live pain-free.</b>
+
         </p>  
 
           {/* <div className="mt-8 flex space-x-4">

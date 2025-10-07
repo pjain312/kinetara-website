@@ -6,11 +6,77 @@ import { VettedExpertsSection } from "@/components/vetted-experts-section";
 import { AdvancedPhysiotherapyClinicsSection } from "@/components/advanced-physiotherapy-clinics-section";
 import { WhatWeTreatSection } from "@/components/what-we-treat-section";
 import FAQSection from "@/components/faq-section";
-import Head from "next/head";
+
+export const metadata = {
+  title: "Kinetara Physiotherapy Clinic in CR Park, near Greater Kailash (GK) South Delhi | Expert Physiotherapists",
+  description:
+    "Visit Kinetara Physiotherapy Clinic in CR Park, near Greater Kailash (GK) South Delhi for expert care in pain management, sports injury rehab, spine therapy, pelvic floor and post-surgery recovery.",
+  keywords: [
+    "physiotherapy clinic CR Park",
+    "physiotherapy clinic in GK1",
+    "physiotherapy clinic in GK2",
+    "physiotherapy clinic in Alaknanda",
+    "physiotherapy clinic in Govindpuri",
+    "South Delhi physiotherapist",
+    "sports injury rehab Delhi",
+    "pain management physiotherapy",
+    "back pain treatment CR Park",
+  ],
+  openGraph: {
+    title: "Kinetara Physiotherapy Clinic - CR Park, near Greater Kailash (GK) , South Delhi",
+    description:
+      "Trusted physiotherapy clinic in CR Park, near Greater Kailash (GK), South Delhi offering expert care for pain relief, rehabilitation and movement restoration.",
+    url: "https://kinetaraphysiotherapy.com",
+    siteName: "Kinetara Physiotherapy",
+    locale: "en_IN",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://kinetaraphysiotherapy.com/",
+  },
+};
 
 export default function HomePage() {
   return (
     <>
+     <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Physiotherapy",
+              "name": "Kinetara Physiotherapy Clinic",
+              "image": "https://www.kinetaraphysiotherapy.com/android-chrome-512x512.png",
+              "@id": "https://kinetaraphysiotherapy.com",
+              "url": "https://kinetaraphysiotherapy.com",
+              "telephone": "+91-8800974721",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "D-584, LGF, CR Park, Greater Kailash (GK)",
+                "addressLocality": "CR Park, Greater Kailash (GK), South Delhi",
+                "addressRegion": "Delhi",
+                "postalCode": "110019",
+                "addressCountry": "IN",
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 28.538845,
+                "longitude": 77.253804,
+              },
+              "areaServed": {
+                "@type": "Place",
+                "name": "South Delhi, CR Park, Greater Kailash (GK1, GK2)"
+              },
+              "openingHours": "Mo-Sa 09:00-18:00",
+              "sameAs": [
+                "https://www.instagram.com/kinetara.physiotherapy/",
+                "https://www.facebook.com/kinetaraphysiotherapy/",
+              ],
+            }),
+          }}
+        />
+      </head>
     <main>
       <HeroSection />
       <OfferingsSection />
