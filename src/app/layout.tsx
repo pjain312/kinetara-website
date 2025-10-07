@@ -32,6 +32,8 @@ export default function RootLayout({
     <html lang="en">
        <head>
        <link rel="canonical" href="https://kinetaraphysiotherapy.com/" />
+       <meta property="og:image" content="https://kinetaraphysiotherapy.com/android-chrome-512x512.png" />
+       <meta name="twitter:image" content="https://kinetaraphysiotherapy.com/android-chrome-512x512.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
