@@ -11,7 +11,6 @@ export function OfferingsSection() {
          Expert physiotherapy services in South Delhi (CR Park) for pain management,
          sports injury, neurological rehab, back and neck pain, post surgery rehab, and more.
         </p>
-      </div>
 
       <div className="container mx-auto px-4 bg-primary-foreground text-primary py-12">
         <div className="grid md:grid-cols-3 gap-8 text-left md:items-stretch">
@@ -60,6 +59,7 @@ export function OfferingsSection() {
           </div>
         </article>
         </div>
+      </div>
       </div>
     </section>
   );
