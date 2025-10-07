@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <head>
-       <link rel="canonical" href="https://www.kinetaraphysiotherapy.com/" />
+       <link rel="canonical" href="https://kinetaraphysiotherapy.com/" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -39,8 +39,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Kinetara",
-              "url": "https://www.kinetaraphysiotherapy.com",
-              "logo": "https://www.kinetaraphysiotherapy.com/android-chrome-512x512.png",
+              "url": "https://kinetaraphysiotherapy.com",
+              "logo": "https://kinetaraphysiotherapy.com/android-chrome-512x512.png",
               "sameAs": [
                     "https://www.facebook.com/kinetaraphysiotherapy/",
                     "https://www.instagram.com/kinetara.physiotherapy/",

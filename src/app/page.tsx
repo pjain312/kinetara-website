@@ -47,7 +47,7 @@ export default function HomePage() {
               "@context": "https://schema.org",
               "@type": "Physiotherapy",
               "name": "Kinetara Physiotherapy Clinic",
-              "image": "https://www.kinetaraphysiotherapy.com/android-chrome-512x512.png",
+              "image": "https://kinetaraphysiotherapy.com/android-chrome-512x512.png",
               "@id": "https://kinetaraphysiotherapy.com",
               "url": "https://kinetaraphysiotherapy.com",
               "telephone": "+91-8800974721",
