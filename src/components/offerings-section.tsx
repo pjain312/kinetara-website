@@ -30,8 +30,8 @@ export function OfferingsSection() {
           <div className="flex flex-col justify-between h-full">
             <h3 className="text-xl font-bold mb-2">Physiotherapy Beyond Clinic</h3>
             <p className="text-white/80 flex-grow">
-              Can't visit the clinic? Get professional physiotherapy at home in CR Park and nearby areas.
-              Kinetara's expert physiotherapists bring trusted care to your doorstep — offering customized 
+              Can&#39;t visit the clinic? Get professional physiotherapy at home in CR Park and nearby areas.
+              Kinetara&#39;s expert physiotherapists bring trusted care to your doorstep — offering customized 
               home sessions for pain relief, post-surgery rehab, elderly mobility, and long-term recovery support.
             </p>
           </div>
