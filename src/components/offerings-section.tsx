@@ -16,7 +16,7 @@ export function OfferingsSection() {
       <div className="container mx-auto px-4 bg-primary-foreground text-primary py-12">
         <div className="grid md:grid-cols-3 gap-8 text-left md:items-stretch">
         <article className="flex items-start space-x-4 h-full">
-          <div className="bg-white/10 p-4 rounded-lg flex-shrink-0">
+          <div className="bg-primary/10 p-4 rounded-lg flex-shrink-0">
             <BriefcaseMedicalIcon className="h-8 w-8 text-primary" />
           </div>
           <div className="flex flex-col justify-between h-full">
@@ -31,7 +31,7 @@ export function OfferingsSection() {
         </article>
 
         <article className="flex items-start space-x-4 h-full">
-          <div className="bg-white/10 p-4 rounded-lg flex-shrink-0">
+          <div className="bg-primary/10 p-4 rounded-lg flex-shrink-0">
             <HomeIcon className="h-8 w-8 text-primary" />
           </div>
           <div className="flex flex-col justify-between h-full">
@@ -45,7 +45,7 @@ export function OfferingsSection() {
         </article>
         
         <article className="flex items-start space-x-4 h-full">
-          <div className="bg-white/10 p-4 rounded-lg flex-shrink-0">
+          <div className="bg-primary/10 p-4 rounded-lg flex-shrink-0">
             <LaptopIcon className="h-8 w-8 text-primary" />
           </div>
           <div className="flex flex-col justify-between h-full">
