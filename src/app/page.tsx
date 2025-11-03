@@ -40,6 +40,20 @@ export default function HomePage() {
   return (
     <>
      <head>
+     <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-N35LGXER7J"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-N35LGXER7J');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

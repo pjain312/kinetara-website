@@ -35,6 +35,20 @@ export default function RootLayout({
        <meta property="og:image" content="https://kinetaraphysiotherapy.com/android-chrome-512x512.png" />
        <meta name="twitter:image" content="https://kinetaraphysiotherapy.com/android-chrome-512x512.png" />
        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-N35LGXER7J"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-N35LGXER7J');
+            `,
+          }}
+        />
+       <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
