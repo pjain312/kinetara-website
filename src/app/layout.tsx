@@ -71,6 +71,8 @@ export default function RootLayout({
               "sameAs": [
                     "https://www.facebook.com/kinetaraphysiotherapy/",
                     "https://www.instagram.com/kinetara.physiotherapy/",
+                    "https://www.linkedin.com/company/kinetara/",
+                    "https://wap.justdial.com/el?source=77&user_type=&docid=011PXX11.XX11.250930122348.Q5R7"
               ]
             })
           }}

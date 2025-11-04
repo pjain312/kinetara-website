@@ -4,7 +4,7 @@ import { MapPinIcon, MenuIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { MobileNav } from "./mobile-nav";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -73,6 +73,13 @@ export function Header() {
             className="hover:text-accent"
           >
             <FaFacebookF className="h-6 w-6 text-primary" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/company/kinetara/"
+            target="_blank"
+            className="hover:text-accent"
+          >
+            <FaLinkedin className="h-6 w-6 text-primary" />
           </Link>
           <Link
             href="https://wa.me/8800974721"

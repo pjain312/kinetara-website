@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaEnvelope, FaLinkedin, FaPhoneAlt} from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -35,6 +35,20 @@ export function Footer() {
               >
                 <FaInstagram />
               </Link>
+              <Link
+                href="https://www.linkedin.com/company/kinetara/"
+                target="_blank"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaLinkedin />
+              </Link>
+              <Link
+                href="mailto:kinetaraphysiotherapy@gmail.com"
+                target="_blank"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaEnvelope />
+              </Link>
             </div>
           </div>
 
@@ -65,16 +79,15 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact</h3>
+            <h3 className="font-bold text-lg mb-4">Also Listed On</h3>
             <div className="flex items-center text-gray-300">
-              <FaEnvelope className="mr-3" />
               <Link
-                href="mailto:kinetaraphysiotherapy@gmail.com"
+                href="https://wap.justdial.com/el?source=77&user_type=&docid=011PXX11.XX11.250930122348.Q5R7"
                 className="hover:text-white"
+                target="_blank"
               >
-                kinetaraphysiotherapy@gmail.com
+                Just Dial
               </Link>
             </div>
           </div>
