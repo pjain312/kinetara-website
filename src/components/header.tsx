@@ -82,7 +82,7 @@ export function Header() {
             <FaLinkedin className="h-6 w-6 text-primary" />
           </Link>
           <Link
-            href="https://wa.me/8800974721"
+            href="https://wa.me/918800974721"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 text-sm hover:text-accent"

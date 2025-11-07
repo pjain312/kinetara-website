@@ -56,7 +56,7 @@ export function SideContactButtons() {
         <PhoneIcon className="h-6 w-6 text-primary-foreground" />
       </a>
       <Link
-        href="https://wa.me/8800974721"
+        href="https://wa.me/918800974721"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 p-3 rounded-l-md shadow-lg hover:bg-green-600"
