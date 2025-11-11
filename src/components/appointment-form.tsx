@@ -112,7 +112,7 @@ export function AppointmentForm({
                 Appointment Request Sent!
               </p>
               <p className="text-sm text-gray-600">
-                We'll contact you soon to confirm your appointment.
+                We&apos;ll contact you soon to confirm your appointment.
               </p>
             </div>
           ) : (

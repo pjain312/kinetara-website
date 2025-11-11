@@ -95,7 +95,7 @@ export function LaunchWeekOfferSection() {
                     Appointment Request Sent!
                   </p>
                   <p className="text-sm text-gray-600">
-                    We'll contact you soon to confirm your appointment.
+                    We&apos;ll contact you soon to confirm your appointment.
                   </p>
                 </div>
               ) : (
@@ -242,7 +242,7 @@ export function LaunchWeekOfferSection() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Google Reviews</h4>
                       <p className="text-sm text-gray-600">
-                        Rated 5.0/5.0 by our patients. Read authentic reviews from people who've experienced our care.
+                        Rated 5.0/5.0 by our patients. Read authentic reviews from people who&apos;ve experienced our care.
                       </p>
                     </div>
                   </div>
