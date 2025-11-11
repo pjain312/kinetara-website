@@ -23,7 +23,7 @@ export function LocationContactSection() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
                 <p className="text-gray-600">
-                  D-548, CR Park, New Delhi
+                  D-584, CR Park, New Delhi
                 </p>
               </div>
             </div>
