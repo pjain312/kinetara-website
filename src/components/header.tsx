@@ -50,12 +50,12 @@ export function Header() {
           >
             Why Kinetara
           </Link>
-          {/* <Link
+          <Link
             href="/about#testimonials"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             Testimonials
-          </Link> */}
+          </Link>
            <Link
             href="/#faq"
             className="text-primary hover:text-primary/80 font-semibold"

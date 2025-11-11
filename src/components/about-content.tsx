@@ -8,7 +8,7 @@ export function AboutContent() {
           <div className="relative">
             <Image
               src="/assets/about-photo.jpeg"
-              alt="Physiotherapy session"
+              alt="physiotherapy clinic in South Delhi, CR Park"
               width={400}
               height={300}
               className="rounded-lg shadow-lg object-cover w-full h-[600px]"

@@ -6,6 +6,9 @@ import { VettedExpertsSection } from "@/components/vetted-experts-section";
 import { AdvancedPhysiotherapyClinicsSection } from "@/components/advanced-physiotherapy-clinics-section";
 import { WhatWeTreatSection } from "@/components/what-we-treat-section";
 import FAQSection from "@/components/faq-section";
+import { TherapistTeam } from "@/components/therapist-team";
+import { LaunchWeekOfferSection } from "@/components/launch-week-offer-section";
+import { LocationContactSection } from "@/components/location-contact-section";
 
 export const metadata = {
   title: "Kinetara Physiotherapy Clinic in CR Park, near Greater Kailash (GK) South Delhi | Expert Physiotherapists",
@@ -101,6 +104,9 @@ export default function HomePage() {
       {/* <VettedExpertsSection /> */}
       <AdvancedPhysiotherapyClinicsSection />
       <WhatWeTreatSection />
+      <LaunchWeekOfferSection />
+      <TherapistTeam />
+      <LocationContactSection />
       <FAQSection />
     </main>
     </>

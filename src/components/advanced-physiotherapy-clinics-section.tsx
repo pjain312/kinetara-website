@@ -85,12 +85,14 @@ export function AdvancedPhysiotherapyClinicsSection() {
   return (
     <section className="py-20 bg-primary-foreground">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4 text-[#153C33]">
-          NEXT-GEN PHYSIOTHERAPY CLINIC
-        </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Expert physiotherapy at advanced clinics — modern care for spine, sports, and chiropractic recovery.
-        </p>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#153C33]">
+            Redefining Recovery, Movement & Strength.
+          </h2>
+          <p className="text-lg text-muted-foreground mb-4 max-w-3xl mx-auto">
+            Welcome to Kinetara Physiotherapy — your trusted clinic for pain management, rehabilitation, and recovery in South Delhi.
+          </p>
+        </div>
       </div>
       <div className="container mx-auto">
         <Carousel

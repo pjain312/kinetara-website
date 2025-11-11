@@ -11,36 +11,35 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Shikha Gupta",
+    name: "Samriti Gupta",
     image: "/assets/avatar.png",
     rating: 5,
-    title: "Best Home Service!",
+    title: "Best physiotherapy clinic for Knee Pain!",
     review:
-      "Best physiotherapy services at convenience of home. I had appointed the service for my mother for past 10 weeks and there has been significant improvement in her condition. Therapist is friendly and understanding and adapts to the patients moods.",
+      "I first consulted Dr. Palak Jain (PT) due to knee pain. However, she expertly assessed the issue being related to overall muscle weakness throughout my body, likely due to hormonal changes and menopause, rather than just a localized knee problem. Her advice and treatment plan was very effective and genuine. Since then, I’ve continued consulting her. Most appreciable is her focus on quality care without any commercialization.",
   },
   {
-    name: "Shikha Gupta",
+    name: "Rohit Aggarwal",
     image: "/assets/avatar.png",
     rating: 5,
-    title: "Best Home Service!",
+    title: "Treatment for Neck Torticollis",
     review:
-      "Best physiotherapy services at convenience of home. I had appointed the service for my mother for past 10 weeks and there has been significant improvement in her condition. Therapist is friendly and understanding and adapts to the patients moods.",
+      "This centre is headed by Dr. Palak, a highly experienced doctor who has completed numerous expert courses. I visited her for my neck torticollis. She first requested an X-ray and then guided me through a 30-day course. I feel much more relaxed now and can completely trust her expertise.",
   },
   {
-    name: "Shikha Gupta",
+    name: "Himanshu Negi",
     image: "/assets/avatar.png",
     rating: 5,
-    title: "Best Home Service!",
-    review:
-      "Best physiotherapy services at convenience of home. I had appointed the service for my mother for past 10 weeks and there has been significant improvement in her condition. Therapist is friendly and understanding and adapts to the patients moods.",
+    title: "Best Treatment for Back Pain",
+    review:"Dr. Ammar is an amazing physiotherapist! Very friendly, patient, and effective with his treatments. Kinetra provides great service overall."  
   },
   {
-    name: "Shikha Gupta",
+    name: "Surendra Vaidh",
     image: "/assets/avatar.png",
     rating: 5,
-    title: "Best Home Service!",
+    title: "Best Physiotherapy clinic for Dry Needling in South Delhi!",
     review:
-      "Best physiotherapy services at convenience of home. I had appointed the service for my mother for past 10 weeks and there has been significant improvement in her condition. Therapist is friendly and understanding and adapts to the patients moods.",
+      "Dr. Ammar is an excellent physiotherapist! The dry needling treatment really helped relieve my pain, and he explained everything clearly. Highly recommend!",
   },
 ];
 
@@ -49,9 +48,9 @@ export function Testimonials() {
     <section className="bg-primary-foreground py-20 relative" id="testimonials">
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-12">
-          <span className="bg-white text-[#153C33] px-3 py-1 rounded-full text-sm font-semibold">
+          {/* <span className="bg-white text-[#153C33] px-3 py-1 rounded-full text-sm font-semibold">
             Happiness On Our Patient&#39;s Faces Is What Drives Us
-          </span>
+          </span> */}
           <h2 className="text-4xl font-bold text-[#153C33] mt-4">
             What Patients <span className="text-primary/80">Says</span> About us
           </h2>
@@ -67,17 +66,17 @@ export function Testimonials() {
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <Card className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <CardContent className="p-6">
+                <div className="p-1 h-full">
+                  <Card className="bg-white rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
+                    <CardContent className="p-6 flex flex-col flex-grow">
                       <div className="flex items-center mb-4">
-                        <Image
+                        {/* <Image
                           src={testimonial.image}
                           alt={testimonial.name}
                           width={60}
                           height={60}
                           className="rounded-full"
-                        />
+                        /> */}
                         <div className="ml-4">
                           <h3 className="font-bold text-lg">
                             {testimonial.name}
@@ -97,7 +96,7 @@ export function Testimonials() {
                       <h4 className="font-bold text-md text-primary/80 mb-2">
                         {testimonial.title}
                       </h4>
-                      <p className="text-gray-600 text-sm">
+                      <p className="text-gray-600 text-sm flex-grow">
                         {testimonial.review}
                       </p>
                     </CardContent>

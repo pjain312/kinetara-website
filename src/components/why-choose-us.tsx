@@ -49,7 +49,7 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-20 bg-white" id="why-choose-us">
+    <section className="py-20 bg-primary-foreground" id="why-choose-us">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mt-4 mb-4">
@@ -59,14 +59,16 @@ export function WhyChooseUs() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-8">
-              <div className="flex items-center justify-center h-16 w-16 bg-white rounded-full shadow-md mb-6">
-                {feature.icon}
+            <div key={index} className="bg-primary rounded-lg p-8 text-white">
+              <div className="flex items-center justify-center h-16 w-16 bg-white/20 rounded-full shadow-md mb-6">
+                <div className="text-white">
+                  {feature.icon}
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">
+              <h3 className="text-xl font-bold text-white mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-white/90">{feature.description}</p>
             </div>
           ))}
         </div>
