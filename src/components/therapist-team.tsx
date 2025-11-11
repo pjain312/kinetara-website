@@ -10,14 +10,14 @@ const team = [
   {
     name: "Dr. Palak Jain PT",
     role: "Founder | HOD",
-    avatar: "/assets/team-member-1.jpeg",
+    avatar: "/assets/team-member-1.webp",
     experience: "7+ years",
     qualification: "BPT, MPT- Ortho, MIAP, Certified Orthopaedic Manual Therapist (COMT), Certified Therapeutic Taping Practitioner (CKTP), IASTM Practitioner, Certified Cupping Therapist (CCT), Certified Pregnancy & Pelvic Floor Specialist."
   },
   {
     name: "Dr. Ammar Ali Khan PT",
     role: "Sr. Physiotherapist",
-    avatar: "/assets/team-member-2.jpeg",
+    avatar: "/assets/team-member-2.webp",
     experience: "3+ years",
     qualification: "BPT, MIAP, Certified Dry Needling Therapist (CDNT), Certified Cupping Therapist (CCT), Certified Therapeutic Taping Practitioner (CKTP)"
   },

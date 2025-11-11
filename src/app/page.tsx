@@ -90,7 +90,7 @@ export default function HomePage() {
                 "https://www.instagram.com/kinetara.physiotherapy/",
                 "https://www.facebook.com/kinetaraphysiotherapy/",
                 "https://www.linkedin.com/company/kinetara/",
-                "https://wap.justdial.com/el?source=77&user_type=&docid=011PXX11.XX11.250930122348.Q5R7"
+                "https://www.justdial.com/Delhi/Kinetara-The-Next-Gen-Physiotherapy-Axis-Bank-Cr-Park-C-R-Park/011PXX11-XX11-250930122348-Q5R7_BZDET?catid=&checkin=&checkout=&vpfs=&stxt=Kinetara%20The%20Next%20Gen%20Physiotherapy%20Axis%20Bank%20Cr%20Park%20C%20R%20Park&nid=&stype=category_list&search=Kinetara-The-Next-Gen-Physiotherapy-Axis-Bank-Cr-Park-C-R-Park&area=Axis%20Bank%20Cr%20Park%20C%20R%20Park&type=Physiotherapy%20Centres&totalJdReviews=undefined&bdmsgtype=&bdcaptiontype=&bdpage=rsltpge&slectedDimgTag=&show_open_abd=0&isb2b=&thumbnail_tag=&jdmartId="
               ],
             }),
           }}

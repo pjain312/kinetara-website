@@ -10,7 +10,7 @@ const experts = [
   {
     name: "Dr. Palak Jain PT",
     specialty: "Founder | HOD",
-    image: "/assets/team-member-1.jpeg",
+    image: "/assets/team-member-1.webp",
     hoverContent: {
       title: "Dr. Palak Jain PT – Founder | HOD (7+ years of experience)",
       social: {
@@ -23,7 +23,7 @@ const experts = [
   {
     name: "Dr. Ammar Ali Khan PT",
     specialty: "Sr. Physiotherapist",
-    image: "/assets/team-member-2.jpeg",
+    image: "/assets/team-member-2.webp",
     hoverContent: {
       title: "Dr. Ammar Ali Khan PT – Sr. Physiotherapist (3+ years of experience)",
       social: {

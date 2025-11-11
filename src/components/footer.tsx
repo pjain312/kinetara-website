@@ -83,7 +83,7 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Also Listed On</h3>
             <div className="flex items-center text-gray-300">
               <Link
-                href="https://wap.justdial.com/el?source=77&user_type=&docid=011PXX11.XX11.250930122348.Q5R7"
+                href="https://www.justdial.com/Delhi/Kinetara-The-Next-Gen-Physiotherapy-Axis-Bank-Cr-Park-C-R-Park/011PXX11-XX11-250930122348-Q5R7_BZDET?catid=&checkin=&checkout=&vpfs=&stxt=Kinetara%20The%20Next%20Gen%20Physiotherapy%20Axis%20Bank%20Cr%20Park%20C%20R%20Park&nid=&stype=category_list&search=Kinetara-The-Next-Gen-Physiotherapy-Axis-Bank-Cr-Park-C-R-Park&area=Axis%20Bank%20Cr%20Park%20C%20R%20Park&type=Physiotherapy%20Centres&totalJdReviews=undefined&bdmsgtype=&bdcaptiontype=&bdpage=rsltpge&slectedDimgTag=&show_open_abd=0&isb2b=&thumbnail_tag=&jdmartId="
                 className="hover:text-white"
                 target="_blank"
               >
