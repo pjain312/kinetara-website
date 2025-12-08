@@ -79,7 +79,7 @@ export function LocationContactSection() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-1">Opening Hours</h3>
                 <p className="text-gray-600">
-                  Mon–Sat 9 AM – 6 PM
+                  Mon–Sun 8 AM – 7 PM
                 </p>
               </div>
             </div>
