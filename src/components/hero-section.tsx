@@ -34,7 +34,7 @@ export function HeroSection() {
               Physiotherapy & Pain Relief Experts in South Delhi
             </h1>
             <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
-              Now open in CR Park – Book your session today & get 20% OFF!
+              Now open in CR Park – Book your session today & get Exciting offers on package payments!
             </h2>
 
             {/* CTA Buttons */}

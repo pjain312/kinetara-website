@@ -74,7 +74,7 @@ export function LaunchWeekOfferSection() {
           {/* Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Special Offer – 20% OFF on All Packages!
+              Get Exciting offers on package payments!
             </h2>
             <p className="text-lg text-muted-foreground">
               Book your session today and get exclusive discount on all our physiotherapy services.
