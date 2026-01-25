@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Phone, Globe, Clock, Train } from "lucide-react";
+import { MapPin, Phone, Globe, Clock, Train, Mail } from "lucide-react";
 import Link from "next/link";
 
 export function LocationContactSection() {
@@ -57,17 +57,17 @@ export function LocationContactSection() {
 
             <div className="flex items-start space-x-4">
               <div className="bg-primary/10 rounded-full p-3 flex-shrink-0">
-                <Globe className="h-6 w-6 text-primary" />
+                <Mail className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Website</h3>
+                <h3 className="font-semibold text-gray-900 mb-1">Email Id</h3>
                 <Link 
-                  href="https://www.kinetaraphysiotherapy.com"
+                  href="mailto:kinetaraphysiotherapy@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-primary/80 transition-colors"
                 >
-                  www.kinetaraphysiotherapy.com
+                  kinetaraphysiotherapy@gmail.com
                 </Link>
               </div>
             </div>
