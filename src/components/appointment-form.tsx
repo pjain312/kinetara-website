@@ -2,8 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRightIcon, X, CheckCircle2, Loader2 } from "lucide-react";
-import { useState } from "react";
+import { ArrowRightIcon, X, CheckCircle2, Loader2, Calendar } from "lucide-react";
+import { useMemo, useState } from "react";
+
+function toDatetimeLocalMin(d: Date) {
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
 
 interface AppointmentFormProps {
   isOpen: boolean;
@@ -21,8 +26,10 @@ export function AppointmentForm({
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    preferredDatetime: "",
     concern: "",
   });
+  const minDatetimeLocal = useMemo(() => toDatetimeLocalMin(new Date()), []);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -53,6 +60,7 @@ export function AppointmentForm({
       setFormData({
         name: "",
         phone: "",
+        preferredDatetime: "",
         concern: "",
       });
       
@@ -153,6 +161,31 @@ export function AppointmentForm({
                   disabled={isSubmitting}
                   className="w-full bg-white text-gray-900 border-gray-300 focus:border-primary focus:ring-primary"
                 />
+              </div>
+              <div>
+                <label
+                  htmlFor="form-datetime"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Preferred date & time
+                </label>
+                <div className="relative">
+                  <Calendar
+                    className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500"
+                    aria-hidden
+                  />
+                  <Input
+                    id="form-datetime"
+                    name="preferredDatetime"
+                    type="datetime-local"
+                    required
+                    min={minDatetimeLocal}
+                    value={formData.preferredDatetime}
+                    onChange={handleChange}
+                    disabled={isSubmitting}
+                    className="w-full bg-white pl-10 text-gray-900 border-gray-300 focus:border-primary focus:ring-primary [color-scheme:light]"
+                  />
+                </div>
               </div>
               <div>
                 <label htmlFor="form-concern" className="block text-sm font-medium text-gray-700 mb-2">

@@ -34,6 +34,48 @@ const testimonials = [
     review:"Dr. Ammar is an amazing physiotherapist! Very friendly, patient, and effective with his treatments. Kinetra provides great service overall."  
   },
   {
+    name: "Ayushi Gupta",
+    image: "/assets/avatar.png",
+    rating: 5,
+    title: "Neck and Shoulder Pain Treatment",
+    review:"I was recommended Kinetara by a friend when I had been dealing with persistent neck and shoulder pain that eventually started radiating to my hands and head, along with numbness, for quite some time. On my doctor’s advice, I opted for physiotherapy, and choosing Kinetara turned out to be the right decision. I couldn’t be happier with the treatment I received from Dr. Palak Jain. What truly stands out is her attention to detail, patient care, and genuine concern for her patients. She explains everything clearly, is extremely patient, and truly cares about her patients’ progress, making the entire treatment process reassuring and effective. I highly recommend Kinetara and Dr. Palak Jain to anyone looking for professional and compassionate physiotherapy care. 😊🌿"
+  },
+  {
+    name: "Benu Gupta",
+    image: "/assets/avatar.png",
+    rating: 5,
+    title: "Best Physiotherapy for Leg Pain",
+    review:"I had an amazing and a very relaxing experience at Kinetara during my treatment for pain in my hip and leg. Dr. Palak is very knowledgeable and made me feel very comfortable throughout the treatment and helped me get over the pain. I would definitely recommend Kinetara for any physiotherapy needs."
+  },
+  {
+    name: "Shreya Gandhi",
+    image: "/assets/avatar.png",
+    rating: 5,
+    title: "Neck and Upper Back Pain Physiotherapy",
+    review:"My experience of physiotherapy with Dr. Palak Jain has been tremendous. She understood the right pain points of my upper back & neck pain and helped me with the right set of exercises to strengthen & relax my muscles. With a lot of patience & calm, she has provided 3 sessions to me."
+  },
+  {
+    name: "Shristy Lama",
+    image: "/assets/avatar.png",
+    rating: 5,
+    title: "Best Physiotherapy Clinic for Cervical Pain",
+    review:"I had a wonderful experience at Kinetara with Dr. Palak. I went in with a serious cervical issue and severe headaches. She carefully assessed my condition step by step and explained everything clearly, which made me feel very comfortable and confident in the treatment. What really stood out was her approach—she checked in with me during every session to make sure I was comfortable and that the treatment was working well. After just one session, my headache was significantly relieved, and after completing five days of sessions, my cervical pain is completely gone. Dr. Palak is not only highly skilled but also extremely kind, patient, and supportive. I truly appreciate her care and dedication. I would highly recommend Kinetara to anyone dealing with similar issues. I went seeing the google reviews, so if this could help anyone gain more trust. Just give it a try😊"
+  },
+  {
+    name: "Nandita Guha Mazumdar",
+    image: "/assets/avatar.png",
+    rating: 5,
+    title: "Best Physiotherapy Clinic for Lower Back Pain",
+    review:"Dr. Palak Jain is very good Physiotherapist, I have seen. She really works hard and gives her 💯 to the patient."
+  },
+  {
+    name: "Tamali Chakraborty",
+    image: "/assets/avatar.png",
+    rating: 5,
+    title: "Best Physiotherapy for Sciatica Pain",
+    review:"The experience was great and Dr. Palak had really taken care of the problem and helped in recovering early."
+  },
+  {
     name: "Surendra Vaidh",
     image: "/assets/avatar.png",
     rating: 5,

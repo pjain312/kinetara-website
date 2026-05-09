@@ -4,9 +4,9 @@ import { Resend } from "resend";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, phone, concern } = body;
+    const { name, phone, concern, preferredDatetime } = body;
 
-    // Validate required fields
+    // Validate required fields (preferredDatetime optional — other forms may embed timing in concern)
     if (!name || !phone || !concern) {
       return NextResponse.json(
         { error: "All fields are required" },
@@ -22,7 +22,7 @@ Patient Details:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Name: ${name}
 Phone: ${phone}
-
+${preferredDatetime ? `Preferred date & time: ${preferredDatetime}\n` : ""}
 Patient Concern:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ${concern}
@@ -49,6 +49,7 @@ This email was sent from the Kinetara Physiotherapy website contact form.`;
         <h2>New Appointment Request</h2>
         <p><strong>Patient Name:</strong> ${name}</p>
         <p><strong>Phone Number:</strong> ${phone}</p>
+        ${preferredDatetime ? `<p><strong>Preferred date &amp; time:</strong> ${preferredDatetime}</p>` : ""}
         <h3>Patient Concern:</h3>
         <p>${concern.replace(/\n/g, "<br>")}</p>
         <hr>

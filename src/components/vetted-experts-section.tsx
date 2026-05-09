@@ -21,11 +21,11 @@ const experts = [
     },
   },
   {
-    name: "Dr. Ammar Ali Khan PT",
+    name: "Dr. Iqra Siddiqui PT",
     specialty: "Sr. Physiotherapist",
-    image: "/assets/team-member-2.webp",
+    image: "/assets/avatar.png",
     hoverContent: {
-      title: "Dr. Ammar Ali Khan PT – Sr. Physiotherapist (3+ years of experience)",
+      title: "Dr. Iqra Siddiqui PT – Sr. Physiotherapist (3+ years of experience)",
       social: {
         facebook: "#",
         linkedin: "#",

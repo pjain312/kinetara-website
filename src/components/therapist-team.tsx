@@ -15,9 +15,9 @@ const team = [
     qualification: "BPT, MPT- Ortho, MIAP, Certified Orthopaedic Manual Therapist (COMT), Certified Therapeutic Taping Practitioner (CKTP), IASTM Practitioner, Certified Cupping Therapist (CCT), Certified Pregnancy & Pelvic Floor Specialist."
   },
   {
-    name: "Dr. Ammar Ali Khan PT",
+    name: "Dr. Iqra Siddiqui PT",
     role: "Sr. Physiotherapist",
-    avatar: "/assets/team-member-2.webp",
+    avatar: "/assets/avatar.png",
     experience: "3+ years",
     qualification: "BPT, MIAP, Certified Dry Needling Therapist (CDNT), Certified Cupping Therapist (CCT), Certified Therapeutic Taping Practitioner (CKTP)"
   },
