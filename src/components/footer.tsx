@@ -67,6 +67,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/specialized-team" className="text-gray-300 hover:text-white">
+                  Our Team
+                </Link>
+              </li>
+              <li>
                 <Link href="/about#why-choose-us" className="text-gray-300 hover:text-white">
                   Why Kinetara
                 </Link>

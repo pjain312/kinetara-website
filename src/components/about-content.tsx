@@ -7,7 +7,7 @@ export function AboutContent() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <Image
-              src="/assets/about-photo.jpeg"
+              src="/assets/spine-specialized-physiotherapy.jpeg"
               alt="physiotherapy clinic in South Delhi, CR Park"
               width={400}
               height={300}

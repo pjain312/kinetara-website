@@ -7,7 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { AppointmentForm } from "@/components/appointment-form";
 
-export function HeroSection() {
+export function HeroSection({ locationName }: { locationName?: string }) {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
@@ -22,8 +22,8 @@ export function HeroSection() {
   return (
     <section
       className="relative bg-cover bg-center py-20 md:py-32 lg:py-52 text-white min-h-screen"
-      style={{ backgroundImage: "url('/assets/home-page.png')" }}
-      aria-label="Physiotherapist treating patient at best physiotherapy clinic in South Delhi"
+      style={{ backgroundImage: "url('/assets/physiotherapy-south-delhi.png')" }}
+      aria-label="Physiotherapist treating patient at best physiotherapy clinic in Cr Park"
     >
       <div className="absolute inset-0 bg-black/50" />
       <div className="container mx-auto px-4 relative z-10">
@@ -31,7 +31,7 @@ export function HeroSection() {
           {/* Full-width centered content */}
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Physiotherapy & Pain Relief Experts in South Delhi
+              Best Physiotherapy & Pain Relief Experts in {locationName ?? "CR Park"}
             </h1>
             <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
               Now open in CR Park – Book your session today & get Exciting offers on package payments!

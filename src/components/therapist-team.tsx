@@ -1,29 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
 import { useState } from "react";
 import { AppointmentForm } from "@/components/appointment-form";
-
-const team = [
-  {
-    name: "Dr. Palak Jain PT",
-    role: "Founder | HOD",
-    avatar: "/assets/team-member-1.webp",
-    experience: "7+ years",
-    qualification: "BPT, MPT- Ortho, MIAP, Certified Orthopaedic Manual Therapist (COMT), Certified Therapeutic Taping Practitioner (CKTP), IASTM Practitioner, Certified Cupping Therapist (CCT), Certified Pregnancy & Pelvic Floor Specialist."
-  },
-  {
-    name: "Dr. Iqra Siddiqui PT",
-    role: "Sr. Physiotherapist",
-    avatar: "/assets/avatar.png",
-    experience: "3+ years",
-    qualification: "BPT, MIAP, Certified Dry Needling Therapist (CDNT), Certified Cupping Therapist (CCT), Certified Therapeutic Taping Practitioner (CKTP)"
-  },
-
-  
-];
+import { PHYSIOTHERAPISTS, getPhysiotherapistPath } from "@/lib/physiotherapists";
 
 export function TherapistTeam() {
   const [showForm, setShowForm] = useState(false);
@@ -38,28 +21,38 @@ export function TherapistTeam() {
             </h2>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="relative w-[240px] h-[320px] mx-auto mb-4">
+            {PHYSIOTHERAPISTS.map((member) => (
+              <Link
+                key={member.slug}
+                href={"/"}
+                className="text-center group"
+              >
+                <div className="relative w-[240px] h-[320px] mx-auto mb-4 overflow-hidden rounded-lg">
                   <Image
-                    src={member.avatar}
+                    src={member.image}
                     alt={member.name}
                     fill
                     sizes="240px"
-                    className="rounded-lg object-cover"
+                    className="rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-xl font-semibold text-gray-800 group-hover:text-primary transition-colors">
                   {member.name}
                 </h3>
                 <p className="text-gray-600 font-medium mb-1">{member.role}</p>
-                <p className="text-blue-600 font-medium text-sm mb-2">{member.experience} of experience</p>
-                {member.qualification && (
-                  <p className="text-gray-500 text-sm leading-relaxed max-w-[240px] mx-auto">
-                    {member.qualification}
-                  </p>
-                )}
-              </div>
+                <p className="text-blue-600 font-medium text-sm mb-2">
+                  {member.experience} of experience
+                </p>
+                <p className="text-primary text-sm font-medium mb-2">
+                  {member.specializations[0]}
+                </p>
+                <p className="text-gray-500 text-sm leading-relaxed max-w-[240px] mx-auto">
+                  {member.qualifications.slice(0, 2).join(" · ")}
+                </p>
+                <span className="inline-flex items-center text-primary text-sm font-semibold mt-3 group-hover:underline">
+                  View profile <ArrowRightIcon className="ml-1 h-4 w-4" />
+                </span>
+              </Link>
             ))}
           </div>
           <div className="container mx-auto px-4 mt-12">

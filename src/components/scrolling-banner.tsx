@@ -2,7 +2,7 @@
 import { Sparkles } from "lucide-react";
 
 const bannerItems = [
-  "Working Hours : Sun to Sat : 8:00 AM To 8:00 PM",
+  "Working Hours : Mon to Sun : 9:00 AM To 7:00 PM",
 ];
 
 export function ScrollingBanner() {

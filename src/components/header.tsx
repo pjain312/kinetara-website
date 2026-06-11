@@ -27,7 +27,7 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="about"
+            href="/about"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             About Us
@@ -39,7 +39,7 @@ export function Header() {
             Our Offerings
           </Link>
           <Link
-            href="/about#our-team"
+            href="/specialized-team"
             className="text-primary hover:text-primary/80 font-semibold"
           >
             Our team

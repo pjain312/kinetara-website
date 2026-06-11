@@ -17,9 +17,9 @@ const clinics = [
     specialty: "Physiotherapy",
     address: "D-584, LGF, CR Park, New Delhi - 110019",
     contact: "8800974721",
-    hours: "8am To 7pm",
+    hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/clinics1.jpg"
+    image: "/assets/physiotherapy-cr-park.jpg"
   },
   {
     name: "Kinetara (CR Park)",
@@ -27,9 +27,9 @@ const clinics = [
     specialty: "Physiotherapy",
     address: "D-584, LGF, CR Park, New Delhi - 110019",
     contact: "8800974721",
-    hours: "8am To 7pm",
+    hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/clinic5.jpg",
+    image: "/assets/physiotherapy-gk1.jpg",
   },
   {
     name: "Kinetara (CR Park)",
@@ -37,9 +37,9 @@ const clinics = [
     specialty: "Physiotherapy",
     address: "D-584, LGF, CR Park, New Delhi - 110019",
     contact: "8800974721",
-    hours: "8am To 7pm",
+    hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/clinic6.jpg",
+    image: "/assets/physiotherapy-gk2.jpg",
   },
   {
     name: "Kinetara (CR Park)",
@@ -47,9 +47,9 @@ const clinics = [
     specialty: "Physiotherapy",
     address: "D-584, LGF, CR Park, New Delhi - 110019",
     contact: "8800974721",
-    hours: "8am To 7pm",
+    hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/clinic2.jpg",
+    image: "/assets/physiotherapy-kalkaji.jpg",
   },
   {
     name: "Kinetara (CR Park)",
@@ -57,9 +57,9 @@ const clinics = [
     specialty: "Physiotherapy",
     address: "D-584, LGF, CR Park, New Delhi - 110019",
     contact: "8800974721",
-    hours: "8am To 7pm",
+    hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/clinic3.jpg",
+    image: "/assets/physiotherapy-treatment-cr-park.jpg",
   },
   {
     name: "Kinetara (CR Park)",
@@ -67,9 +67,9 @@ const clinics = [
     specialty: "Physiotherapy",
     address: "D-584, LGF, CR Park, New Delhi - 110019",
     contact: "8800974721",
-    hours: "8am To 7pm",
+    hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/clinic4.jpg",
+    image: "/assets/physiotherapy-alaknanda.jpg",
   },
 
 ];

@@ -83,19 +83,53 @@ const testimonials = [
     review:
       "Dr. Ammar is an excellent physiotherapist! The dry needling treatment really helped relieve my pain, and he explained everything clearly. Highly recommend!",
   },
+  {
+    name: "Ramya Madhavan",
+    image: "/assets/avatar.png",
+    rating: 5,
+    title: "Best Physiotherapy near me",
+    review:
+      "I have been seeing the doctor for approx. six weeks for multiple issues, including an injury. Dr Palak Jain is committed to your immediate relief as well as in time recovery. Her consultants are clear and comprehensive. Her sessions last as long as is required for her to be satisfied that you have had immediate improvement, and following the sessions, she suggests a curated set of exercises for you to continue on your own [a refreshing change from physios who insist on medications, repeated scans, regular sessions, etc]. She is one of those rare doctors who is rigorous and responsive throughout - and also so warm that you soon feel she's family. My sessions with Dr Ammar and Dr Iqra have been of a similar standard. Kinetara has led to lasting improvements in my quality of life. Both my parents and husband have since had comprehensive consultations with Dr Palak Jain, and my mother and husband have had a series of sessions that, in both cases, have led to immense improvement in their condition. I'm so grateful, and will be recommending this clinic to everyone I know!",
+  },
+  {
+    name: "Ekta Sachdeva",
+    image: "/assets/avatar.png",
+    title: "Neck and Shoulder Pain Treatment",
+    review:
+      "I am extremely satisfied with the physiotherapy care I received at Kinetara under the guidance of Dr. Palak. I approached her for degenerative knee-related issues that were significantly affecting my daily activities. Dr. Palak conducted a thorough assessment of my condition and designed a personalized treatment plan with a strong focus on functional manual therapy and leg-strengthening exercises. Her systematic approach addressed not only pain relief but also the underlying factors contributing to my discomfort. Over the course of the therapy, I have experienced nearly 70% relief from pain and discomfort. The muscle-strengthening program has helped reduce the load on my knee, leading to noticeable improvements in walking, climbing stairs, balance, and overall mobility. I sincerely appreciate Dr. Palak’s expertise, dedication, and encouragement throughout my recovery journey. Her guidance has made a significant difference in my quality of life. Thank you, Dr. Palak, for your excellent care and support.",
+    rating: 5,
+  },
+  {
+    name: "Divya Kapoor",
+    image: "/assets/avatar.png",
+    title: "Neck and Shoulder Pain Treatment",
+    review:
+      "I had an extremely positive physiotherapy experience with Dr. Palak Jain. She’s knowledgeable, understanding, accommodating and a kind hearted person. She carefully understood my concerns, explained the treatment plan clearly, and tailored the exercises to my needs. I noticed a real improvement in my mobility and pain levels within a few sessions. Very professional and supportive. Thank you!",
+    rating: 5,
+  },
 ];
 
-export function Testimonials() {
+export function Testimonials({
+  title,
+  subtitle,
+}: {
+  title?: string;
+  subtitle?: string;
+}) {
   return (
     <section className="bg-primary-foreground py-20 relative" id="testimonials">
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-12">
-          {/* <span className="bg-white text-[#153C33] px-3 py-1 rounded-full text-sm font-semibold">
-            Happiness On Our Patient&#39;s Faces Is What Drives Us
-          </span> */}
           <h2 className="text-4xl font-bold text-[#153C33] mt-4">
-            What Patients <span className="text-primary/80">Says</span> About us
+            {title ?? (
+              <>
+                What Patients <span className="text-primary/80">Says</span> About us
+              </>
+            )}
           </h2>
+          {subtitle && (
+            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">{subtitle}</p>
+          )}
         </div>
         <Carousel
           plugins={[Autoplay({ delay: 2000 })]}

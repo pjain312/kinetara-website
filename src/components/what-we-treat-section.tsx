@@ -1,19 +1,45 @@
 "use client";
 
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
 import { useState } from "react";
 import { AppointmentForm } from "@/components/appointment-form";
+import {
+  CONDITIONS,
+  CONDITIONS_WITHOUT_PAGES,
+  getConditionPath,
+} from "@/lib/conditions";
+import { SERVICE_AREAS, getServiceAreaPath } from "@/lib/service-areas";
 
-const treatmentData = {
+type SectionItem = {
+  text: string;
+  href?: string;
+};
+
+const treatmentData: {
+  title: string;
+  description1: string;
+  description2: string;
+  sections: { title: string; items: SectionItem[] }[];
+} = {
   title: "WHAT WE OFFER",
   description1:
     "Every treatment plan is tailored to your needs after a detailed assessment.",
-  description2:
-    " Find the right treatment for you.",
+  description2: " Find the right treatment for you.",
   sections: [
+    {
+      title: "Conditions",
+      items: [
+        ...CONDITIONS.map((c) => ({
+          text: c.name,
+          href: getConditionPath(c.slug),
+        })),
+        ...CONDITIONS_WITHOUT_PAGES.map((text) => ({ text })),
+      ],
+    },
     {
       title: "Advanced Therapies for Faster Recovery",
       items: [
@@ -33,8 +59,8 @@ const treatmentData = {
         "Myofacial Release",
         "IASTM Therapy",
         "Posture Correction & Ergonomic Training",
-        "Strength and Conditioning"
-      ],
+        "Strength and Conditioning",
+      ].map((text) => ({ text })),
     },
     {
       title: "Our Specialised Treatments",
@@ -47,20 +73,49 @@ const treatmentData = {
         "Geriatric Rehab",
         "Neurological Rehab",
         "Pre and Post Surgery Rehab",
-        "Occupational therapy"
-      ],
+        "Occupational therapy",
+      ].map((text) => ({ text })),
+    },
+    {
+      title: "Service Areas",
+      items: SERVICE_AREAS.map((area) => ({
+        text: `${area.displayName}`,
+        href: getServiceAreaPath(area.slug),
+      })),
     },
   ],
 };
 
-const ListItem = ({ text }: { text: string }) => (
-  <li className="flex items-center mb-3">
-    <div className="bg-primary rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-      <FaArrowRight className="text-white text-xs" />
-    </div>
-    <span className="text-primary">{text}</span>
-  </li>
-);
+const ListItem = ({
+  text,
+  href,
+}: {
+  text: string;
+  href?: string;
+}) => {
+  const content = (
+    <>
+      <div className="bg-primary rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+        <FaArrowRight className="text-white text-xs" />
+      </div>
+      <span className={href ? "text-primary group-hover:underline" : "text-primary"}>
+        {text}
+      </span>
+    </>
+  );
+
+  if (href) {
+    return (
+      <li className="mb-3">
+        <Link href={href} className="flex items-center group">
+          {content}
+        </Link>
+      </li>
+    );
+  }
+
+  return <li className="flex items-center mb-3">{content}</li>;
+};
 
 export function WhatWeTreatSection() {
   const [showForm, setShowForm] = useState(false);
@@ -84,7 +139,11 @@ export function WhatWeTreatSection() {
                 <ScrollArea className="h-80">
                   <ul className="pr-4">
                     {section.items.map((item, itemIndex) => (
-                      <ListItem key={itemIndex} text={item} />
+                      <ListItem
+                        key={itemIndex}
+                        text={item.text}
+                        href={item.href}
+                      />
                     ))}
                   </ul>
                 </ScrollArea>
