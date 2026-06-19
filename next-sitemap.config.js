@@ -16,7 +16,7 @@ const SERVICE_AREA_SLUGS = [
 ];
 
 const PHYSIOTHERAPIST_PATHS = [
-  "/physiotherapist-palak-jain-pelvic-floor-spine",
+  "/physiotherapist-palak-jain-spine-ortho",
   "/physiotherapist-iqra-siddiqui-dry-needling",
 ];
 

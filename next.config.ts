@@ -13,6 +13,11 @@ const nextConfig = {
         destination: '/specialized-team',
         permanent: true,
       },
+      {
+        source: '/physiotherapist-palak-jain-pelvic-floor-spine',
+        destination: '/physiotherapist-palak-jain-spine-ortho',
+        permanent: true,
+      },
       // Old URLs only (/physiotherapy-kalkaji) — must not match /physiotherapy-clinic-*
       {
         source: '/physiotherapy-:location((?!clinic-).*)',
@@ -28,7 +33,7 @@ const nextConfig = {
         destination: '/physiotherapy/:location',
       },
       {
-        source: '/physiotherapist-palak-jain-pelvic-floor-spine',
+        source: '/physiotherapist-palak-jain-spine-ortho',
         destination: '/physiotherapist/palak-jain',
       },
       {

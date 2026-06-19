@@ -1,15 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
-import { Star, Award, Stethoscope, MapPin, BadgeCheck, Sparkles } from "lucide-react";
+import { PhysiotherapistCTA } from "@/components/physiotherapist-cta";
+import { getConditionByName, getConditionPath } from "@/lib/conditions";
 import {
   PHYSIOTHERAPISTS,
   type Physiotherapist,
   getPhysiotherapistPath,
 } from "@/lib/physiotherapists";
 import { CLINIC_DETAILS } from "@/lib/service-areas";
-import { PhysiotherapistCTA } from "@/components/physiotherapist-cta";
-import { LocationFAQSection } from "@/components/location-faq-section";
+import { Award, BadgeCheck, MapPin, Sparkles, Star, Stethoscope } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 function SectionHeading({
   children,
@@ -85,6 +85,9 @@ export function PhysiotherapistPage({ doctor }: { doctor: Physiotherapist }) {
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-primary">
                 {doctor.name}
               </h1>
+              <p className="mt-2 text-sm sm:text-base text-primary font-medium leading-snug">
+                {doctor.title}
+              </p>
               <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
                 {doctor.intro}
               </p>
@@ -133,7 +136,13 @@ export function PhysiotherapistPage({ doctor }: { doctor: Physiotherapist }) {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <SectionHeading>About {doctor.name.split(" ").slice(0, 2).join(" ")}</SectionHeading>
-          <p className="text-gray-600 text-lg leading-relaxed">{doctor.bio}</p>
+          <div className="space-y-4">
+            {doctor.bio.split("\n\n").map((paragraph) => (
+              <p key={paragraph} className="text-gray-600 text-lg leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -172,14 +181,34 @@ export function PhysiotherapistPage({ doctor }: { doctor: Physiotherapist }) {
             </div>
           </div>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {doctor.conditionsTreated.map((condition) => (
-              <li key={condition} className="flex items-center">
-                <div className="bg-primary rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
-                  <FaArrowRight className="text-white text-xs" />
-                </div>
-                <span className="text-gray-700 font-medium">{condition}</span>
-              </li>
-            ))}
+            {doctor.conditionsTreated.map((condition) => {
+              const conditionPage = getConditionByName(condition);
+              const content = (
+                <>
+                  <div className="bg-primary rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
+                    <FaArrowRight className="text-white text-xs" />
+                  </div>
+                  <span className="text-gray-700 font-medium group-hover:text-primary transition-colors">
+                    {condition}
+                  </span>
+                </>
+              );
+
+              return (
+                <li key={condition}>
+                  {conditionPage ? (
+                    <Link
+                      href={getConditionPath(conditionPage.slug)}
+                      className="flex items-center group hover:text-primary transition-colors"
+                    >
+                      {content}
+                    </Link>
+                  ) : (
+                    <div className="flex items-center">{content}</div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>

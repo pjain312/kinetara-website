@@ -24,7 +24,7 @@ export function TherapistTeam() {
             {PHYSIOTHERAPISTS.map((member) => (
               <Link
                 key={member.slug}
-                href={"/"}
+                href={getPhysiotherapistPath(member.slug)}
                 className="text-center group"
               >
                 <div className="relative w-[240px] h-[320px] mx-auto mb-4 overflow-hidden rounded-lg">
@@ -43,11 +43,11 @@ export function TherapistTeam() {
                 <p className="text-blue-600 font-medium text-sm mb-2">
                   {member.experience} of experience
                 </p>
-                <p className="text-primary text-sm font-medium mb-2">
+                {/* <p className="text-primary text-sm font-medium mb-2">
                   {member.specializations[0]}
-                </p>
+                </p> */}
                 <p className="text-gray-500 text-sm leading-relaxed max-w-[240px] mx-auto">
-                  {member.qualifications.slice(0, 2).join(" · ")}
+                  {member.qualifications}
                 </p>
                 <span className="inline-flex items-center text-primary text-sm font-semibold mt-3 group-hover:underline">
                   View profile <ArrowRightIcon className="ml-1 h-4 w-4" />
