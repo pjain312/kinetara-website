@@ -19,7 +19,7 @@ const clinics = [
     contact: "8800974721",
     hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/physiotherapy-cr-park.jpg"
+    image: "/assets/spine-specialized-physiotherapy.jpeg"
   },
   {
     name: "Kinetara (CR Park)",
@@ -69,7 +69,7 @@ const clinics = [
     contact: "8800974721",
     hours: "9am To 7pm",
     // linkedin: "#",
-    image: "/assets/physiotherapy-alaknanda.jpg",
+    image: "/assets/physiotherapy-alaknanda.jpeg",
   },
 
 ];
