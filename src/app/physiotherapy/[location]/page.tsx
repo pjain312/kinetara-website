@@ -47,8 +47,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description: area.metaDescription,
     keywords: [
       `physiotherapy clinic near ${area.name}`,
+      `physiotherapy clinic in ${area.name}`,
+      `physiotherapy near ${area.name}`,
+      `physiotherapy in ${area.name}`,
       `physiotherapy ${area.name}`,
       `best physiotherapist near ${area.name}`,
+      `best physiotherapist in ${area.name}`,
       `back pain treatment ${area.name}`,
       `sports injury rehab ${area.name}`,
       "physiotherapy CR Park",
