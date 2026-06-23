@@ -7,7 +7,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { AppointmentForm } from "@/components/appointment-form";
 
-export function HeroSection({ locationName }: { locationName?: string }) {
+export function HeroSection({
+  locationName,
+  subtitle,
+}: {
+  locationName?: string;
+  subtitle?: string;
+}) {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
@@ -34,7 +40,8 @@ export function HeroSection({ locationName }: { locationName?: string }) {
               Best Physiotherapy & Pain Relief Experts in {locationName ?? "CR Park"}
             </h1>
             <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
-              Now open in CR Park – Book your session today & get Exciting offers on package payments!
+              {subtitle ??
+                "Now open in CR Park – Book your session today & get Exciting offers on package payments!"}
             </h2>
 
             {/* CTA Buttons */}

@@ -9,6 +9,8 @@ export type ServiceArea = {
   displayName: string;
   distance: string;
   travelTime: string;
+  heroSubtitle: string;
+  highlights: string[];
   howToReach: string[];
   parking: string;
   metaDescription: string;
@@ -57,6 +59,15 @@ function baseFaqs(areaName: string, distance: string, travelTime: string): Servi
   ];
 }
 
+function locationFaqs(
+  areaName: string,
+  distance: string,
+  travelTime: string,
+  localFaq: ServiceAreaFAQ
+): ServiceAreaFAQ[] {
+  return [localFaq, ...baseFaqs(areaName, distance, travelTime)];
+}
+
 export const SERVICE_AREAS: ServiceArea[] = [
   {
     slug: "kalkaji",
@@ -64,6 +75,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Kalkaji",
     distance: "2.5 km",
     travelTime: "8–12 minute",
+    heroSubtitle:
+      "Just 2.5 km from Kalkaji Mandir — expert spine, sports injury & dry needling physiotherapy in CR Park.",
+    highlights: [
+      "Popular with patients from Kalkaji Mandir, Deshbandhu College, and Nehru Place corridor.",
+      "Easy access via Kalkaji Mandir Metro (Violet Line) — a 10-minute auto ride to our clinic.",
+      "Many Kalkaji patients book evening slots after work without crossing South Delhi traffic.",
+    ],
     howToReach: [
       "Take the Outer Ring Road towards Nehru Place and continue to CR Park via Pamposh Enclave.",
       "From Kalkaji Mandir Metro (Violet Line), take a short auto or cab ride (~10 minutes) to CR Park.",
@@ -75,7 +93,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Looking for the best physiotherapy clinic near Kalkaji? Kinetara in CR Park offers expert treatment for back pain, sciatica, sports injuries and more — just minutes away.",
     intro:
       "Residents of Kalkaji choose Kinetara for advanced physiotherapy, dry needling, and pain management without travelling across the city. Our CR Park clinic is a short ride from Kalkaji Mandir and Nehru Place.",
-    faqs: baseFaqs("Kalkaji", "2.5 km", "8–12 minute"),
+    faqs: locationFaqs("Kalkaji", "2.5 km", "8–12 minute", {
+      question: "Is Kinetara convenient for Kalkaji Mandir and Nehru Place commuters?",
+      answer:
+        "Yes. Our CR Park clinic sits between Kalkaji and Nehru Place on the Outer Ring Road corridor — most Kalkaji patients reach us in under 12 minutes by auto or cab, even during peak hours.",
+    }),
   },
   {
     slug: "gk1",
@@ -83,6 +105,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Greater Kailash 1 (GK1)",
     distance: "1.5 km",
     travelTime: "5–8 minute",
+    heroSubtitle:
+      "South Delhi's closest advanced physiotherapy clinic for GK1 — just 1.5 km away in CR Park.",
+    highlights: [
+      "One of the nearest specialist physiotherapy centres to GK1 M Block and N Block markets.",
+      "Convenient for GK1 families who want in-clinic sessions or home visits without long commutes.",
+      "Trusted by GK residents for frozen shoulder, back pain, and post-surgery rehabilitation.",
+    ],
     howToReach: [
       "Head south on Greater Kailash Road towards Chittaranjan Park.",
       "From Kailash Colony Metro (Violet Line), CR Park is a quick cab or auto ride away.",
@@ -94,7 +123,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Best physiotherapy clinic near GK1 (Greater Kailash 1). Kinetara in CR Park provides expert rehab for back pain, frozen shoulder, sciatica and sports injuries.",
     intro:
       "If you live or work in Greater Kailash 1, Kinetara is one of the closest advanced physiotherapy clinics — offering in-clinic and home visit options for GK1 patients.",
-    faqs: baseFaqs("GK1", "1.5 km", "5–8 minute"),
+    faqs: locationFaqs("GK1", "1.5 km", "5–8 minute", {
+      question: "Do you offer home physiotherapy visits in Greater Kailash 1?",
+      answer:
+        "Yes. We regularly visit GK1, including M Block, N Block, and W Block areas, for patients who prefer treatment at home — especially seniors and post-surgery cases.",
+    }),
   },
   {
     slug: "gk2",
@@ -102,6 +135,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Greater Kailash 2 (GK2)",
     distance: "2 km",
     travelTime: "6–10 minute",
+    heroSubtitle:
+      "GK2's go-to clinic for spine rehab, dry needling & sports injury recovery — minutes away in CR Park.",
+    highlights: [
+      "Quick drive from M Block GK2 and Kailash Colony via Greater Kailash Road.",
+      "GK2 gym-goers and runners visit us for sports injury rehab and dry needling.",
+      "Flexible slots for working professionals commuting through Kailash Colony Metro.",
+    ],
     howToReach: [
       "Take the Outer Ring Road towards Nehru Enclave and enter CR Park via Bipin Chandra Pal Marg.",
       "From M Block GK2, drive through Greater Kailash towards Chittaranjan Park.",
@@ -113,7 +153,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Expert physiotherapy near GK2 (Greater Kailash 2). Visit Kinetara in CR Park for back pain, slip disc, sciatica, sports injury rehab and dry needling.",
     intro:
       "GK2 residents benefit from quick access to Kinetara's next-gen physiotherapy centre in CR Park — with treatments ranging from manual therapy and dry needling to post-surgery rehabilitation.",
-    faqs: baseFaqs("GK2", "2 km", "6–10 minute"),
+    faqs: locationFaqs("GK2", "2 km", "6–10 minute", {
+      question: "What conditions do GK2 patients most commonly visit Kinetara for?",
+      answer:
+        "GK2 patients frequently visit us for sports injuries, knee pain, frozen shoulder, cervical spondylosis, and post-gym muscle strains — our dry needling and manual therapy programmes are especially popular.",
+    }),
   },
   {
     slug: "cr-park",
@@ -121,6 +165,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Chittaranjan Park (CR Park)",
     distance: "In-clinic location",
     travelTime: "Walkable from most blocks",
+    heroSubtitle:
+      "Your neighbourhood physiotherapy clinic in CR Park — advanced rehab, dry needling & spine care on your doorstep.",
+    highlights: [
+      "Walkable from most CR Park blocks — no long commute for daily rehab sessions.",
+      "The only next-gen physiotherapy centre located inside Chittaranjan Park itself.",
+      "Trusted by CR Park families for pelvic floor rehab, geriatric care, and post-surgery recovery.",
+    ],
     howToReach: [
       "We are located at D-584, LGF, CR Park — easily accessible from all CR Park blocks.",
       "Nearest metro: Nehru Enclave (Magenta Line), followed by a short auto ride.",
@@ -132,7 +183,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Kinetara Physiotherapy Clinic in CR Park, South Delhi. Expert physiotherapists for back pain, frozen shoulder, sciatica, sports injuries and post-surgery rehab.",
     intro:
       "Kinetara is proudly based in the heart of Chittaranjan Park — your neighbourhood physiotherapy clinic with advanced equipment, certified therapists, and personalised treatment plans.",
-    faqs: baseFaqs("CR Park", "within the neighbourhood", "5–10 minute walk"),
+    faqs: locationFaqs("CR Park", "within the neighbourhood", "5–10 minute walk", {
+      question: "Can CR Park residents walk to the clinic?",
+      answer:
+        "Yes. Most CR Park blocks are within a 5–10 minute walk or short cycle ride of our D-584 clinic. Many local patients schedule back-to-back weekly sessions because the clinic is right in the neighbourhood.",
+    }),
   },
   {
     slug: "alaknanda",
@@ -140,6 +195,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Alaknanda",
     distance: "2 km",
     travelTime: "7–10 minute",
+    heroSubtitle:
+      "Trusted physiotherapy for Alaknanda — spine, sciatica & sports injury care just 2 km away in CR Park.",
+    highlights: [
+      "Straightforward ORR route from Alaknanda to our CR Park clinic in under 10 minutes.",
+      "Popular with Alaknanda seniors who prefer a nearby clinic over travelling to central Delhi.",
+      "Home visit physiotherapy available across Alaknanda for post-surgery and mobility cases.",
+    ],
     howToReach: [
       "Take the Outer Ring Road from Alaknanda towards Nehru Place and turn into CR Park.",
       "From Govindpuri Metro, a short cab ride reaches our clinic in under 10 minutes.",
@@ -151,7 +213,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Physiotherapy clinic near Alaknanda, South Delhi. Kinetara in CR Park treats back pain, neck pain, sciatica, frozen shoulder and sports injuries.",
     intro:
       "Alaknanda patients visit Kinetara for reliable, evidence-based physiotherapy just minutes away in CR Park — with options for in-clinic sessions and home visits.",
-    faqs: baseFaqs("Alaknanda", "2 km", "7–10 minute"),
+    faqs: locationFaqs("Alaknanda", "2 km", "7–10 minute", {
+      question: "What is the fastest route from Alaknanda to Kinetara?",
+      answer:
+        "Most Alaknanda patients take the Outer Ring Road towards Nehru Place and turn into CR Park — a 7–10 minute drive. Alternatively, Govindpuri Metro connects via a short cab ride.",
+    }),
   },
   {
     slug: "govindpuri",
@@ -159,6 +225,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Govindpuri",
     distance: "3 km",
     travelTime: "10–15 minute",
+    heroSubtitle:
+      "Advanced physiotherapy near Govindpuri Metro — dry needling, spine rehab & pain relief in CR Park.",
+    highlights: [
+      "Easy auto/cab connection from Govindpuri Metro (Violet Line) via Kalkaji.",
+      "Affordable, high-quality care without travelling to central or north Delhi clinics.",
+      "Regular home visits across Govindpuri for patients with limited mobility.",
+    ],
     howToReach: [
       "From Govindpuri Metro (Violet Line), take an auto or cab towards CR Park via Kalkaji.",
       "Drive along the Outer Ring Road towards Nehru Enclave and enter CR Park.",
@@ -170,7 +243,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Best physiotherapy near Govindpuri. Kinetara CR Park offers expert treatment for back pain, slip disc, sciatica, knee pain and sports injury rehabilitation.",
     intro:
       "Govindpuri residents trust Kinetara for accessible physiotherapy in nearby CR Park — combining modern techniques like dry needling and IASTM with compassionate, patient-first care.",
-    faqs: baseFaqs("Govindpuri", "3 km", "10–15 minute"),
+    faqs: locationFaqs("Govindpuri", "3 km", "10–15 minute", {
+      question: "How do I reach Kinetara from Govindpuri Metro?",
+      answer:
+        "Exit Govindpuri Metro and take an auto or cab towards Kalkaji/CR Park — the ride typically takes 10–15 minutes. We can share exact directions when you call to book.",
+    }),
   },
   {
     slug: "nehru-place",
@@ -178,6 +255,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Nehru Place",
     distance: "2 km",
     travelTime: "7–10 minute",
+    heroSubtitle:
+      "Physiotherapy minutes from Nehru Place — book lunch-break or after-work sessions in CR Park.",
+    highlights: [
+      "Ideal for Nehru Place office workers — quick auto ride during lunch or after 6 PM.",
+      "Skip Nehru Place parking hassles — drive straight to our CR Park clinic instead.",
+      "Popular for desk-related neck pain, back pain, and RSI among IT and corporate professionals.",
+    ],
     howToReach: [
       "From Nehru Place Metro or market area, head towards Pamposh Enclave and CR Park.",
       "A short auto ride from Nehru Place bus terminal reaches the clinic quickly.",
@@ -189,7 +273,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Physiotherapy clinic near Nehru Place. Kinetara in CR Park provides pain management, sports rehab, dry needling and spine therapy for Nehru Place professionals and residents.",
     intro:
       "Working in Nehru Place? Kinetara is minutes away in CR Park — ideal for lunch-break appointments, post-work sessions, and weekend recovery programmes.",
-    faqs: baseFaqs("Nehru Place", "2 km", "7–10 minute"),
+    faqs: locationFaqs("Nehru Place", "2 km", "7–10 minute", {
+      question: "Can I book a physiotherapy session during my Nehru Place lunch break?",
+      answer:
+        "Yes. Many Nehru Place professionals book 45–60 minute slots between 12–2 PM. Our CR Park clinic is a 7–10 minute auto ride from the Nehru Place hub.",
+    }),
   },
   {
     slug: "okhla",
@@ -197,6 +285,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Okhla",
     distance: "4 km",
     travelTime: "12–18 minute",
+    heroSubtitle:
+      "Comprehensive physiotherapy for Okhla — back pain, sports injuries & post-surgery rehab in CR Park.",
+    highlights: [
+      "Worth the short drive from Okhla Phase 1, 2, and 3 for specialist spine and ortho rehab.",
+      "Flexible morning and evening slots for Okhla factory and office workers.",
+      "Home physiotherapy visits available across Okhla for patients who cannot travel.",
+    ],
     howToReach: [
       "Take the Mathura Road or Okhla Flyover towards Kalkaji, then continue to CR Park.",
       "From Okhla Metro stations, connect via auto/cab through Govindpuri to CR Park.",
@@ -208,7 +303,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Physiotherapy near Okhla, Delhi. Visit Kinetara CR Park for expert back pain, sciatica, sports injury and post-surgery rehabilitation — a short drive from Okhla.",
     intro:
       "Okhla patients choose Kinetara for comprehensive physiotherapy in CR Park — advanced therapies, experienced physiotherapists, and flexible appointment slots.",
-    faqs: baseFaqs("Okhla", "4 km", "12–18 minute"),
+    faqs: locationFaqs("Okhla", "4 km", "12–18 minute", {
+      question: "Is it worth travelling from Okhla to CR Park for physiotherapy?",
+      answer:
+        "Many Okhla patients prefer Kinetara over local options because we offer specialist treatments — dry needling, pelvic floor rehab, and post-surgical protocols — under one roof with certified therapists.",
+    }),
   },
   {
     slug: "panchsheel-park",
@@ -216,6 +315,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Panchsheel Park",
     distance: "5 km",
     travelTime: "15–20 minute",
+    heroSubtitle:
+      "Premium physiotherapy care for Panchsheel Park — expert spine, frozen shoulder & sports rehab in CR Park.",
+    highlights: [
+      "Panchsheel Park families choose us for evidence-based care and personalised treatment plans.",
+      "Connected via Hauz Khas Metro → Nehru Enclave, then a short ride to CR Park.",
+      "In-clinic and home visit options for Panchsheel Park seniors and post-surgery patients.",
+    ],
     howToReach: [
       "Take the Outer Ring Road towards Nehru Place and continue to CR Park via Kalkaji.",
       "From Panchsheel Park, drive via Chirag Delhi flyover towards Nehru Place and turn into CR Park.",
@@ -227,7 +333,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Best physiotherapy clinic near Panchsheel Park, South Delhi. Kinetara in CR Park offers expert treatment for back pain, sciatica, frozen shoulder and sports injuries.",
     intro:
       "Panchsheel Park residents choose Kinetara for advanced, evidence-based physiotherapy a short drive away in CR Park — with in-clinic sessions and home visit options.",
-    faqs: baseFaqs("Panchsheel Park", "5 km", "15–20 minute"),
+    faqs: locationFaqs("Panchsheel Park", "5 km", "15–20 minute", {
+      question: "Do Panchsheel Park patients visit Kinetara for specialist treatments?",
+      answer:
+        "Yes. Panchsheel Park patients often come to us for frozen shoulder, cervical spondylosis, pelvic floor rehab, and sports injuries — treatments that require certified specialists and advanced equipment.",
+    }),
   },
   {
     slug: "chirag-delhi",
@@ -235,6 +345,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Chirag Delhi",
     distance: "4 km",
     travelTime: "12–15 minute",
+    heroSubtitle:
+      "Physiotherapy near Chirag Delhi — manual therapy, dry needling & rehab via the ORR in CR Park.",
+    highlights: [
+      "Magenta Line connection: Chirag Delhi Metro → Nehru Enclave → short auto to clinic.",
+      "Convenient for Soami Nagar and Sheikh Sarai residents along the ORR corridor.",
+      "Trusted for back pain, sciatica, and sports injury recovery in South Delhi.",
+    ],
     howToReach: [
       "Take the Outer Ring Road from Chirag Delhi towards Nehru Place and continue to CR Park.",
       "From Chirag Delhi Metro (Magenta Line), travel two stops to Nehru Enclave and take a short auto ride.",
@@ -246,7 +363,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Physiotherapy clinic near Chirag Delhi. Kinetara in CR Park provides expert rehab for back pain, slip disc, sciatica, sports injuries and dry needling.",
     intro:
       "Living near Chirag Delhi? Kinetara's CR Park clinic is minutes away on the Outer Ring Road — offering advanced physiotherapy, manual therapy, and personalised recovery plans.",
-    faqs: baseFaqs("Chirag Delhi", "4 km", "12–15 minute"),
+    faqs: locationFaqs("Chirag Delhi", "4 km", "12–15 minute", {
+      question: "How do Chirag Delhi Metro commuters reach Kinetara?",
+      answer:
+        "Take the Magenta Line from Chirag Delhi to Nehru Enclave (2 stops), then a 5-minute auto ride to our CR Park clinic at D-584.",
+    }),
   },
   {
     slug: "nehru-enclave",
@@ -254,6 +375,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Nehru Enclave",
     distance: "1.5 km",
     travelTime: "5–8 minute",
+    heroSubtitle:
+      "Our nearest metro is Nehru Enclave — South Delhi's most accessible physiotherapy clinic in CR Park.",
+    highlights: [
+      "Closest physiotherapy clinic to Nehru Enclave Metro (Magenta Line) — often a 5-minute auto ride.",
+      "Some Nehru Enclave residents walk or cycle to the clinic for regular sessions.",
+      "Ground-level clinic access ideal for elderly patients from Nehru Enclave colonies.",
+    ],
     howToReach: [
       "Nehru Enclave Metro (Magenta Line) is our nearest station — the clinic is a short auto ride away.",
       "Drive via Bipin Chandra Pal Marg directly into CR Park.",
@@ -265,7 +393,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Best physiotherapy clinic near Nehru Enclave. Kinetara in CR Park treats back pain, frozen shoulder, sciatica, knee pain and sports injuries — just minutes away.",
     intro:
       "Kinetara is one of the closest advanced physiotherapy clinics to Nehru Enclave — barely minutes from the metro station, with certified therapists and modern equipment.",
-    faqs: baseFaqs("Nehru Enclave", "1.5 km", "5–8 minute"),
+    faqs: locationFaqs("Nehru Enclave", "1.5 km", "5–8 minute", {
+      question: "Which metro station is closest to Kinetara for Nehru Enclave residents?",
+      answer:
+        "Nehru Enclave on the Magenta Line is our nearest metro — just 1.5 km away. Most patients take a short auto or e-rickshaw directly to D-584, CR Park.",
+    }),
   },
   {
     slug: "tughlakabad-extension",
@@ -273,6 +405,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Tughlakabad Extension",
     distance: "3 km",
     travelTime: "10–15 minute",
+    heroSubtitle:
+      "Quality physiotherapy for Tughlakabad Extension — pain relief & rehab via Kalkaji in CR Park.",
+    highlights: [
+      "Direct Kalkaji–CR Park route via Ma Anandmayee Marg — no need to travel to central Delhi.",
+      "Popular for knee pain, back pain, and post-fracture rehab among Tughlakabad Extension families.",
+      "Home visits available across Tughlakabad Extension for post-surgery recovery.",
+    ],
     howToReach: [
       "Drive via Kalkaji towards CR Park through the Ma Anandmayee Marg route.",
       "From Govindpuri Metro (Violet Line), take a short auto ride to CR Park.",
@@ -284,7 +423,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Physiotherapy clinic near Tughlakabad Extension. Kinetara in CR Park offers expert treatment for back pain, sciatica, knee pain and post-surgery rehabilitation.",
     intro:
       "Tughlakabad Extension residents trust Kinetara for accessible, high-quality physiotherapy in nearby CR Park — from pain management to post-surgery rehab.",
-    faqs: baseFaqs("Tughlakabad Extension", "3 km", "10–15 minute"),
+    faqs: locationFaqs("Tughlakabad Extension", "3 km", "10–15 minute", {
+      question: "Is Kinetara closer than central Delhi hospitals for Tughlakabad Extension patients?",
+      answer:
+        "For most Tughlakabad Extension residents, our CR Park clinic is significantly closer than central Delhi — typically a 10–15 minute drive via Kalkaji, with shorter wait times and personalised care.",
+    }),
   },
   {
     slug: "masjid-moth",
@@ -292,6 +435,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "Masjid Moth",
     distance: "4 km",
     travelTime: "12–15 minute",
+    heroSubtitle:
+      "Expert physiotherapy for Masjid Moth — dry needling, spine care & rehab through GK to CR Park.",
+    highlights: [
+      "Quick access via Greater Kailash and Pamposh Enclave — no Outer Ring Road detours needed.",
+      "Masjid Moth patients value our dry needling and manual therapy for chronic pain relief.",
+      "Evening and weekend appointments suit Masjid Moth working professionals and homemakers.",
+    ],
     howToReach: [
       "Drive via Greater Kailash towards Chittaranjan Park through Pamposh Enclave.",
       "From Kailash Colony Metro (Violet Line), CR Park is a short cab or auto ride away.",
@@ -303,7 +453,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Best physiotherapy clinic near Masjid Moth, South Delhi. Kinetara in CR Park provides expert rehab for back pain, frozen shoulder, sciatica and sports injuries.",
     intro:
       "Patients from Masjid Moth visit Kinetara for advanced physiotherapy, dry needling, and rehabilitation — a quick drive through GK to our CR Park clinic.",
-    faqs: baseFaqs("Masjid Moth", "4 km", "12–15 minute"),
+    faqs: locationFaqs("Masjid Moth", "4 km", "12–15 minute", {
+      question: "What is the best route from Masjid Moth to Kinetara?",
+      answer:
+        "Drive via Greater Kailash through Pamposh Enclave towards CR Park — most Masjid Moth patients reach us in 12–15 minutes. Kailash Colony Metro is also a convenient starting point.",
+    }),
   },
   {
     slug: "east-of-kailash",
@@ -311,6 +465,13 @@ export const SERVICE_AREAS: ServiceArea[] = [
     displayName: "East of Kailash",
     distance: "3 km",
     travelTime: "10–12 minute",
+    heroSubtitle:
+      "Physiotherapy for East of Kailash — spine, sports injury & dry needling just 3 km away in CR Park.",
+    highlights: [
+      "Captain Gaur Marg route to Nehru Place and CR Park — a familiar commute for East of Kailash residents.",
+      "Kailash Colony Metro connects East of Kailash patients to our clinic in under 15 minutes.",
+      "Popular for cervical pain, frozen shoulder, and gym-related injuries in the East of Kailash community.",
+    ],
     howToReach: [
       "Drive via Captain Gaur Marg towards Nehru Place and continue into CR Park.",
       "From Kailash Colony Metro (Violet Line), take a short cab ride through GK to CR Park.",
@@ -322,7 +483,11 @@ export const SERVICE_AREAS: ServiceArea[] = [
       "Physiotherapy clinic near East of Kailash. Kinetara in CR Park treats back pain, slip disc, sciatica, sports injuries and offers post-surgery rehabilitation.",
     intro:
       "East of Kailash residents choose Kinetara for next-gen physiotherapy just minutes away in CR Park — combining manual therapy, dry needling, and personalised exercise programmes.",
-    faqs: baseFaqs("East of Kailash", "3 km", "10–12 minute"),
+    faqs: locationFaqs("East of Kailash", "3 km", "10–12 minute", {
+      question: "Do East of Kailash patients visit for sports and gym injuries?",
+      answer:
+        "Yes. East of Kailash has a large fitness-conscious community — we regularly treat gym-related strains, runner's knee, shoulder impingement, and tennis elbow with dry needling and corrective exercise programmes.",
+    }),
   },
 ];
 

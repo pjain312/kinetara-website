@@ -7,7 +7,8 @@ import { WhatWeTreatSection } from "@/components/what-we-treat-section";
 import { LaunchWeekOfferSection } from "@/components/launch-week-offer-section";
 import { TherapistTeam } from "@/components/therapist-team";
 import { LocationContactSection } from "@/components/location-contact-section";
-import FAQSection from "@/components/faq-section";
+import { LocationIntroSection } from "@/components/location-intro-section";
+import { LocationFAQSection } from "@/components/location-faq-section";
 import {
   SERVICE_AREAS,
   getServiceArea,
@@ -112,14 +113,18 @@ export default async function PhysiotherapyLocationPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main>
-        <HeroSection locationName={area.displayName} />
+        <HeroSection
+          locationName={area.displayName}
+          subtitle={area.heroSubtitle}
+        />
+        <LocationIntroSection area={area} />
         <OfferingsSection />
         <AdvancedPhysiotherapyClinicsSection />
         <WhatWeTreatSection />
         <LaunchWeekOfferSection />
         <TherapistTeam />
         <LocationContactSection />
-        <FAQSection />
+        <LocationFAQSection areaName={area.displayName} faqs={area.faqs} />
       </main>
     </>
   );
