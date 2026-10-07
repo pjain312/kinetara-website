@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRightIcon, X, CheckCircle2, Loader2, Calendar } from "lucide-react";
+import { reportLeadFormConversion } from "@/lib/gtag";
 import { useMemo, useState } from "react";
 
 function toDatetimeLocalMin(d: Date) {
@@ -55,6 +56,7 @@ export function AppointmentForm({
         throw new Error(data.error || "Failed to send email");
       }
 
+      reportLeadFormConversion();
       setSubmitStatus("success");
       // Reset form
       setFormData({

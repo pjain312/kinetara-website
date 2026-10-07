@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ArrowRightIcon, PhoneIcon, CheckCircle2, Loader2, Star, Shield, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import { reportLeadFormConversion } from "@/lib/gtag";
 import { useState } from "react";
 
 export function LaunchWeekOfferSection() {
@@ -43,6 +44,7 @@ export function LaunchWeekOfferSection() {
         throw new Error(data.error || "Failed to send email");
       }
 
+      reportLeadFormConversion();
       setSubmitStatus("success");
       setFormData({
         name: "",

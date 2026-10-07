@@ -45,6 +45,19 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-N35LGXER7J');
+              gtag('config', 'AW-17700317377');
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-17700317377/Fd7ICKn4k7kbEMHRlfhB',
+                  'event_callback': callback
+                });
+                return false;
+              }
             `,
           }}
         />
